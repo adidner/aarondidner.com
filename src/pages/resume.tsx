@@ -10,8 +10,9 @@ function Resume() {
   return (
     <Layout>
       <div>
-        
+        <a download href={"/Aaron-Didner-Resume.pdf"}><div className="btn" style={{float: 'right'}}>Dowload</div></a>
         <div className={"main-containers"}>
+            
           <h2>Skills</h2>
           {
             experienceSkillData.map((currentVal) => {

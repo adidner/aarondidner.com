@@ -19,11 +19,11 @@ export default function Navbar() {
 
   return (
     <nav>
-      <h1>{ title }</h1>
+      <h1><Link to="/" activeStyle={activeStyle}>{ title }</Link></h1>
       <div className="links">
-        <Link to="/" activeStyle={activeStyle}>Home</Link>
+        
         <Link to="/resume" activeStyle={activeStyle}>Resume</Link>
-        <Link to="/projects" activeStyle={activeStyle}>Personal Projects</Link>
+        <Link to="/projects" activeStyle={activeStyle}>Projects</Link>
       </div>
     </nav>
   )
