@@ -21,9 +21,11 @@ export default function Layout({ children }) {
 
   return (
     <div className="layout">
-      <Navbar />
-      <div className="content">
-        { children }
+      <div>
+        <Navbar />
+        <div className="content">
+          { children }
+        </div>
       </div>
       <footer>
         <div className="all-icon-links-container">
