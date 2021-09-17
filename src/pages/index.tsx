@@ -11,12 +11,12 @@ export default function Home({ data }) {
     <Layout>
       <section className={styles.header}>
         <div>
-          <h2>Design</h2>
-          <h3>Develop & Deploy</h3>
-          <p>UX designer & web developer based in Manchester.</p>
-          <Link className={styles.btn} to="/projects">My Portfolio Projects</Link>
+          <h2>Aaron Didner</h2>
+          <h3>Web Developer</h3>
+          <p>Also a West Coast Swing Dancer, Dungeon Master, Bookworm, Calisthenics Athletes and Cryptocurrency Enthusiust</p>
+          <a className={styles.btn} href={"mailto:adidner@gmail.com"}>Contact Me</a>
         </div>
-        <Img fluid={data.file.childImageSharp.fluid} />
+        <Img style={{height: '500px', width: 'auto'}} fluid={data.file.childImageSharp.fluid} />
       </section>
     </Layout>
   )
@@ -24,7 +24,7 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query Banner {
-    file(relativePath: {eq: "banner.png"}) {
+    file(relativePath: {eq: "profile-pic.png"}) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

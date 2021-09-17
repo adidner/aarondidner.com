@@ -57,3 +57,22 @@ footer p{
   margin-top: 20px;
   font-weight: 500;
 }
+
+.all-icon-links-container {
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.icon-svg-itself{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.copyright-footer{
+  display:flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
