@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-transformer-remark`,
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-sass',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -34,9 +35,9 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    title: 'Web Warrior',
-    description: 'web dev portfolio',
-    copyright: 'This website is copyright 2021 Web Warrior',
-    contact: 'me@thewebwarrioruk.co.uk',
+    title: 'Aaron Didner',
+    description: 'Aaron Didner portfolio/personal site',
+    copyright: 'This website is copyright 2021 Aaron Didner',
+    contact: 'adidner@gmail.com',
   },
 }

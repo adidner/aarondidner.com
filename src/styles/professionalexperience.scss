@@ -1,0 +1,36 @@
+.skill-container{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+
+.skill-title {
+    margin-right: 7px;
+}
+
+.main-containers {
+    margin: 10px 0 20px 0;
+}
+
+
+.experience-card-container{
+
+
+    margin: 5px 5px 15px 5px;
+
+    .experience-title-set {
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+
+    // .experience-title-bullet-list {
+
+    // }
+
+    & li {
+        margin-left: 25px;
+    }
+
+}

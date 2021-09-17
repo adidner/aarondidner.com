@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { experienceSkillData } from "../data/experienceSkillsData";
 import { experienceJobdata, experienceJobInterface } from "../data/experienceJobData";
-
+import "../styles/professionalexperience.scss"
 
 function Resume() {
 
