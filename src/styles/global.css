@@ -79,6 +79,12 @@ footer p{
 .icon-svg-itself{
   padding-left: 5px;
   padding-right: 5px;
+
+}
+
+
+.icon-link-container svg:hover {
+  fill: violet;
 }
 
 .copyright-footer{
