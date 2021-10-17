@@ -1,0 +1,82 @@
+
+
+
+
+// .hobbies-books-grid-container {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-rows: 1fr 1fr 1fr 1fr;
+
+
+//     .hobbies-books-learning {
+//         grid-column: 1 / 1;
+//         grid-row: 1 / 1;   
+//     }
+
+//     .hobbies-books-learning-to-read {
+//         grid-column: 2 / 2;
+//         grid-row: 2 / 2;
+//     }
+
+//     .hobbies-books-learning-read {
+//         grid-column: 3 / 3;
+//         grid-row: 2 / 2;
+//     }
+
+//     .hobbies-books-fiction {
+//         grid-column: 1 / 1;
+//         grid-row: 3 / 3;
+//     }
+    
+//     .hobbies-books-fiction-to-read {
+//         grid-column: 2 / 2;
+//         grid-row:  4 / 4;
+//     }
+
+//     .hobbies-books-fiction-read {
+//         grid-column: 3 /3;
+//         grid-row: 4 / 4;
+//     }
+// }
+
+
+.hobbies-books-grid-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 0.07fr 1fr 0.07fr 1fr;
+    grid-template-areas: 
+    "Learning . ."
+    ". LearningToRead LearningRead"
+    "Fiction . ."
+    ". FictionToRead FictionRead";
+    gap: 0px 5px;
+
+
+    .hobbies-books-learning {
+        grid-area: Learning;
+    }
+
+    .hobbies-books-learning-to-read {
+        grid-area: LearningToRead;
+    }
+
+    .hobbies-books-learning-read {
+        grid-area: LearningRead;
+    }
+
+    .hobbies-books-fiction {
+        grid-area: Fiction;
+    }
+    
+    .hobbies-books-fiction-to-read {
+        grid-area: FictionToRead;
+    }
+
+    .hobbies-books-fiction-read {
+        grid-area: FictionRead;
+    }
+    
+    ul {
+        padding-left: 15px;
+    }
+}

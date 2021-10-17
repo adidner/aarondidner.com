@@ -23,7 +23,9 @@ export default function Navbar() {
       <div className="links">
         
         <Link to="/resume" activeStyle={activeStyle}>Resume</Link>
-        <Link to="/projects" activeStyle={activeStyle}>Projects</Link>
+        <Link to="/reading" activeStyle={activeStyle}>Reading</Link>
+        {/* <Link to="/personal-projects" activeStyle={activeStyle}>Personal Projects</Link>
+        <Link to="/projects" activeStyle={activeStyle}>Projects</Link> */}
       </div>
     </nav>
   )
