@@ -118,7 +118,7 @@ export const learningReadBookData: ReadInterface[] = [
     },
     {
         title: "The Ultimate RPG Gameplay Guide",
-        imagePath: "/data/bookCovers/",
+        imagePath: "/data/bookCovers/the_ultimate_rpg_gameplay_guide.png",
         author: "James D'Amato",
         rating: 9,
         review: "Always cool to see story telling from a different point of view and get pointers from the masters regards to creating atmosphere, themes in a campaign, carying ideas with imagery, resolving conflict and so much more. A great read for anyone who plays RPGS",
