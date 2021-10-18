@@ -108,7 +108,22 @@ export const learningReadBookData: ReadInterface[] = [
         review: "Recommended to me by my current employer Fearless it details how new marketing needs to rely on particulalry remarkable products over traditional things like TV advertising",
         takeAways: ["We live in an era when most easy remarkable problems have been solved and people are no longer proactively looking for something genericly useful that everyone needs (like pain killers)", "To differentiate yourself you need to be remarkable in some fashion", "Being remarkable leads to the few people who use your product becoming 'sneezers' and thus spreading the product to all their friends", "Remarkable is a very loose term and can range wildly from extremely niche like disgusting horror films, excessively cheap like while still solid quality like McDonalds or Ikea, process shifting like Amazon and the popularization of online shopping, extremely high end like the $2000 hand made silk scarves, outstanding service like people who will take hours and walk you through complex tasks or return policies that extend out decades and cover everything, extreme ease of use or simplicity like with touch screens", "Related but not in the book is the concept of differentation in a variety of 6 categories Product (Features, Performance, Efficacy, Durability, Reliability), Service (Ordering Ease, Delivery, Installation, Customer Training), Channel (Coverage, Expertise, Performance), Relationship (Competency, Courtesy, Reliability, Responsiveness), Reputation, Price (cheap/expensive, payment model)", ],
     },
-
+    {
+        title: "I Will Teach You To Be Rich",
+        imagePath: "/data/bookCovers/i_will_teach_you_to_be_rich.jpg",
+        author: "Ramit Sethi",
+        rating: 8,
+        review: "I good sum of the major do's and don't of personal finance as an adult. I knew a lot of these already but doesn't hurt repeating and I definielty learned a few things",
+        takeAways: ["Create systems to pay bills and invest automatically and then just spend the rest of your money as you please (this is a concious spending plan and is a lot easier than traditional budgeting)", "Don't nit pick, instead knock out the most valuble things and then call it good", "Negotiate with banks all over the place", "Use credit cards for their insuance benefits, always pay them off", "High interest savings accounts are good", "Max out your retirement accounts", "You want to keep a diversification not only between various stocks but also across sectors (with more intention, like REITS, Large caps, Small caps, Foreign, Growth Value) and across asset classes (stocks, bonds, real estate) -> if you manage yourself will require rebalancing. Lifecycle funds do this for you and adjust over time", ""],
+    },
+    {
+        title: "The Ultimate RPG Gameplay Guide",
+        imagePath: "/data/bookCovers/",
+        author: "James D'Amato",
+        rating: 9,
+        review: "Always cool to see story telling from a different point of view and get pointers from the masters regards to creating atmosphere, themes in a campaign, carying ideas with imagery, resolving conflict and so much more. A great read for anyone who plays RPGS",
+        takeAways: [""],
+    },
 ] 
 
 export const fictionReadBookData: ReadInterface[] = [
