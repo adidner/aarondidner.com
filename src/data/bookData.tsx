@@ -121,8 +121,8 @@ export const learningReadBookData: ReadInterface[] = [
         imagePath: "/data/bookCovers/the_ultimate_rpg_gameplay_guide.png",
         author: "James D'Amato",
         rating: 9,
-        review: "Always cool to see story telling from a different point of view and get pointers from the masters regards to creating atmosphere, themes in a campaign, carying ideas with imagery, resolving conflict and so much more. A great read for anyone who plays RPGS",
-        takeAways: [""],
+        review: "Always cool to see story telling from a different point of view and get pointers from the masters regards to creating atmosphere, themes in a campaign, carying ideas with imagery, resolving conflict, pacing and so much more. A great read for anyone who plays RPGS",
+        takeAways: ["Pick a system that fits your goals (action, romance, exploration, politics/social etc)", "system vs story led creation", "You can collaberate on world building as a GM ask questions", "More disscussion and transparency -> say this action might have consequences or may make your character feel this way or such. Check before forcing someone's character into certain situations, ask what they had in mind and why (potentially different ways to accomplish goals or general ideas)", "Atmosphere is tied to how you describe things as a DM", "Make choices important", "yes and...", "for pacing be aware of which rooms are which types of encouter and whether they're upbeats or down beats (Action, Discovery, Interpersonal, Emotional, Challenge, Preparation)", "Make a Theme and enforce it via imagery and world building", "Telling PCs to look for Trouble rather than playing protectively", "Personal Flaws and motivations"],
     },
     {
         title: "Sum",
