@@ -124,6 +124,14 @@ export const learningReadBookData: ReadInterface[] = [
         review: "Always cool to see story telling from a different point of view and get pointers from the masters regards to creating atmosphere, themes in a campaign, carying ideas with imagery, resolving conflict and so much more. A great read for anyone who plays RPGS",
         takeAways: [""],
     },
+    {
+        title: "Sum",
+        imagePath: "/data/bookCovers/sum.png",
+        author: "David Eagleman",
+        rating: 10,
+        review: "A great book exploring various ideas of what happens after death and various paradigms underwhich the universe might actually work",
+        takeAways: ["The book doesn't really have takeaways in that it was mostly a fun, lighter, though provoking read"],
+    },
 ] 
 
 export const fictionReadBookData: ReadInterface[] = [
