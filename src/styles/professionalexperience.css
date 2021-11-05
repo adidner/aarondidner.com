@@ -1,0 +1,43 @@
+.skill-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skill-title {
+  margin-right: 7px;
+}
+
+.main-containers {
+  margin: 10px 0 20px 0;
+}
+
+.experience-card-container {
+  margin: 5px 5px 15px 5px;
+}
+
+.experience-card-container .experience-title-set {
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.experience-card-container li {
+  margin-left: 25px;
+}
+/*# sourceMappingURL=professionalexperience.css.map */

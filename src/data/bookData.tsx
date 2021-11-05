@@ -13,7 +13,7 @@ export interface ReadInterface {
 export const learningReadBookData: ReadInterface[] = [
     {
         title: "The Subtle Art of Not Giving a F*ck",
-        imagePath: "/data/bookCovers/the_subtle_art_of_not_giving_a_fuck.png",
+        imagePath: "/bookCovers/the_subtle_art_of_not_giving_a_fuck.png",
         author: "Mark Manson",
         rating: 10,
         review: "Some really cool ideas and interesting takes on society, life, media and habits. ",
@@ -22,7 +22,7 @@ export const learningReadBookData: ReadInterface[] = [
     },
     {
         title: "Come As You Are",
-        imagePath: "/data/bookCovers/come_as_you_are.jpg",
+        imagePath: "/bookCovers/come_as_you_are.jpg",
         author: "Emily Nagoski",
         rating: 10,
         review: "Different ways to think about sex, with amazing insight.",
@@ -30,7 +30,7 @@ export const learningReadBookData: ReadInterface[] = [
     },
     {
         title: "How to Invent Everything",
-        imagePath: "/data/bookCovers/how_to_invent_everything.jpg",
+        imagePath: "/bookCovers/how_to_invent_everything.jpg",
         author: "Ryan North",
         rating: 9,
         review: "Rebuilding civilization from scratch with all our knowledge, lots of interesting science, history and invention. No particularly big take aways but neat to know how records, engines, turbines and electricity work. Plus smelting and smithing and how to use animals to do all sorts of agriclture and how to rediscover penecillin if needed",
@@ -38,7 +38,7 @@ export const learningReadBookData: ReadInterface[] = [
     },
     {
         title: "Declutter Your Mind",
-        imagePath: "/data/bookCovers/declutter_your_mind.jpg",
+        imagePath: "/bookCovers/declutter_your_mind.jpg",
         author: "S.J. Scott & Barrie Davenport",
         rating: 7,
         review: "Kinda generic / obvious but had a few standout point. ",
@@ -46,7 +46,7 @@ export const learningReadBookData: ReadInterface[] = [
     },
     {
         title: "Getting to Yes",
-        imagePath: "/data/bookCovers/getting_to_yes.png",
+        imagePath: "/bookCovers/getting_to_yes.png",
         author: "Roger Fisher & William Urgy",
         rating: 10,
         review: "A bit thick but revolutionary ideas with regards to negotiation with enhancing examples. ",
@@ -54,7 +54,7 @@ export const learningReadBookData: ReadInterface[] = [
     },
     {
         title: "Tax Free Wealth",
-        imagePath: "/data/bookCovers/tax_free_wealth.jpg",
+        imagePath: "/bookCovers/tax_free_wealth.jpg",
         author: "Tom Wheelwright",
         rating: 7,
         review: "A bit thick but good and important ideas. Also the meta idea that american tax code is made to encourage businesses to exist here and thats why we've stayed such a power hosue of economics. ",
@@ -62,7 +62,7 @@ export const learningReadBookData: ReadInterface[] = [
     },
     {
         title: "The 4 Hour Work Week",
-        imagePath: "/data/bookCovers/the_4_hour_work_week.jpg",
+        imagePath: "/bookCovers/the_4_hour_work_week.jpg",
         author: "Tim Ferris",
         rating: 10,
         review: "Revolutionary concepts with regards to efficiency and value created for work",
@@ -70,7 +70,7 @@ export const learningReadBookData: ReadInterface[] = [
     },
     {
         title: "Rich Dad Poor Dad",
-        imagePath: "/data/bookCovers/rich_dad_poor_dad.jpg",
+        imagePath: "/bookCovers/rich_dad_poor_dad.jpg",
         author: "Robert Kiyosaki",
         rating: 9,
         review: "A classic that introcudes new ways to think about money",
@@ -78,7 +78,7 @@ export const learningReadBookData: ReadInterface[] = [
     },
     {
         title: "The 5 Love Languages",
-        imagePath: "/data/bookCovers/the_5_love_languages.jpg",
+        imagePath: "/bookCovers/the_5_love_languages.jpg",
         author: "Gary Chapman",
         rating: 6,
         review: "A few examples were useful but mostly the core concept from the web is enough",
@@ -86,7 +86,7 @@ export const learningReadBookData: ReadInterface[] = [
     },
     {
         title: "10% Happier",
-        imagePath: "/data/bookCovers/10_happier.jpg",
+        imagePath: "/bookCovers/10_happier.jpg",
         author: "Dan Harris",
         rating: 9,
         review: "Kinda slow at the beginning as he's just explaining his life story. Some very good take aways though and the writing style is generally pretty good. ",
@@ -94,7 +94,7 @@ export const learningReadBookData: ReadInterface[] = [
     },
     {
         title: "Show Your Work",
-        imagePath: "/data/bookCovers/show_your_work.png",
+        imagePath: "/bookCovers/show_your_work.png",
         author: "Austin Kleon",
         rating: 9,
         review: "I really cool book, covering the importance of documenting your journey as a way to sharing valuble knowledge and finding likeminded people. Show and cute book, very easy read",
@@ -102,7 +102,7 @@ export const learningReadBookData: ReadInterface[] = [
     },
     {
         title: "Purple Cow",
-        imagePath: "/data/bookCovers/purple_cow.jpg",
+        imagePath: "/bookCovers/purple_cow.jpg",
         author: "Seth Godin",
         rating: 9,
         review: "Recommended to me by my current employer Fearless it details how new marketing needs to rely on particulalry remarkable products over traditional things like TV advertising",
@@ -110,7 +110,7 @@ export const learningReadBookData: ReadInterface[] = [
     },
     {
         title: "I Will Teach You To Be Rich",
-        imagePath: "/data/bookCovers/i_will_teach_you_to_be_rich.jpg",
+        imagePath: "/bookCovers/i_will_teach_you_to_be_rich.jpg",
         author: "Ramit Sethi",
         rating: 8,
         review: "I good sum of the major do's and don't of personal finance as an adult. I knew a lot of these already but doesn't hurt repeating and I definielty learned a few things",
@@ -118,7 +118,7 @@ export const learningReadBookData: ReadInterface[] = [
     },
     {
         title: "The Ultimate RPG Gameplay Guide",
-        imagePath: "/data/bookCovers/the_ultimate_rpg_gameplay_guide.png",
+        imagePath: "/bookCovers/the_ultimate_rpg_gameplay_guide.png",
         author: "James D'Amato",
         rating: 9,
         review: "Always cool to see story telling from a different point of view and get pointers from the masters regards to creating atmosphere, themes in a campaign, carying ideas with imagery, resolving conflict, pacing and so much more. A great read for anyone who plays RPGS",
@@ -126,7 +126,7 @@ export const learningReadBookData: ReadInterface[] = [
     },
     {
         title: "Sum",
-        imagePath: "/data/bookCovers/sum.png",
+        imagePath: "/bookCovers/sum.png",
         author: "David Eagleman",
         rating: 10,
         review: "A great book exploring various ideas of what happens after death and various paradigms underwhich the universe might actually work",
@@ -137,14 +137,14 @@ export const learningReadBookData: ReadInterface[] = [
 export const fictionReadBookData: ReadInterface[] = [
     {
         title: "Mistborn",
-        imagePath: "/data/bookCovers/mistborn.jpg",
+        imagePath: "/bookCovers/mistborn.jpg",
         author: "Brandon Sanderson",
         rating: 10,
         review: "Wonderful world with an amazing and unique magic system that has very interesting weaknesses/tradeoffs",
     },
     {
         title: "Ready Player One",
-        imagePath: "/data/bookCovers/ready_player_one.jpg",
+        imagePath: "/bookCovers/ready_player_one.jpg",
         author: "Ernest Cline",
         rating: 9,
         review: "Solid story, with some nice twists and turns. References and easter eggs abound. I like the D&D ones and old game ones that my dad gave me context for.",
@@ -152,7 +152,7 @@ export const fictionReadBookData: ReadInterface[] = [
     },
     {
         title: "Ex-Heroes",
-        imagePath: "/data/bookCovers/ex_heroes.iffi",
+        imagePath: "/bookCovers/ex_heroes.iffi",
         author: "Peter Clines",
         rating: 9.5,
         review: "Zombies and Super Heros. ",
@@ -160,7 +160,7 @@ export const fictionReadBookData: ReadInterface[] = [
     },
     {
         title: "Hero",
-        imagePath: "/data/bookCovers/hero.iffi",
+        imagePath: "/bookCovers/hero.iffi",
         author: "Perry Moore",
         rating: 10,
         review: "Lovely vibe, morals and character development",
@@ -168,7 +168,7 @@ export const fictionReadBookData: ReadInterface[] = [
     },
     {
         title: "Harry Potter",
-        imagePath: "/data/bookCovers/harry_potter.iffi",
+        imagePath: "/bookCovers/harry_potter.iffi",
         author: "J. K. Rowling",
         rating: 8,
         review: "A bit darker than I remember but well described as oh, thats such a *insert main character here* thing to say/do",
@@ -176,7 +176,7 @@ export const fictionReadBookData: ReadInterface[] = [
     },
     {
         title: "Michael Vey",
-        imagePath: "/data/bookCovers/michael_vey.iffi",
+        imagePath: "/bookCovers/michael_vey.iffi",
         author: "Richard Paul Evans",
         rating: 10,
         review: "Love the characters and the powers. Such Michael is such a real high schooler feeling character and I love the chemistry between him and Taylor.",
@@ -184,7 +184,7 @@ export const fictionReadBookData: ReadInterface[] = [
     },
     {
         title: "Percy Jackson",
-        imagePath: "/data/bookCovers/percy_jackson.iffi",
+        imagePath: "/bookCovers/percy_jackson.iffi",
         author: "Rick Riordan",
         rating: 10,
         review: "Tantilizing story, super well crafted characters and well written worlds and action",
@@ -192,7 +192,7 @@ export const fictionReadBookData: ReadInterface[] = [
     },
     {
         title: "Enders Game",
-        imagePath: "/data/bookCovers/enders_game.iffi",
+        imagePath: "/bookCovers/enders_game.iffi",
         author: "Orson Scott Card",
         rating: 9,
         review: "The brilliance of ender and the way the entire arc of him working for the lazer tag 0 gravity teams is awesome. Some much creativity with the formations, and fighting styles. A bit slow towards the end and not a huge fan of the whole depressing overworked kid vibe",
@@ -200,7 +200,7 @@ export const fictionReadBookData: ReadInterface[] = [
     },
     {
         title: "Creatures of Light and Darkness",
-        imagePath: "/data/bookCovers/creatures_of_light_and_darkness.iffi",
+        imagePath: "/bookCovers/creatures_of_light_and_darkness.iffi",
         author: "Roger Zelazny",
         rating: 9,
         review: "I remember liking it a lot although I don't remember it that well, some really creative and out there stuff",
@@ -208,7 +208,7 @@ export const fictionReadBookData: ReadInterface[] = [
     },
     {
         title: "Perks of Being a Wall Flower",
-        imagePath: "/data/bookCovers/perks_of_being_a_wall_flower.iffi",
+        imagePath: "/bookCovers/perks_of_being_a_wall_flower.iffi",
         author: "Stephen Chbosky",
         rating: 9,
         review: "So much personality and understanding of how it feels to be in highschool",
@@ -216,7 +216,7 @@ export const fictionReadBookData: ReadInterface[] = [
     },
     {
         title: "Temeraire",
-        imagePath: "/data/bookCovers/temeraire.iffi",
+        imagePath: "/bookCovers/temeraire.iffi",
         author: "Niome Novak",
         rating: 7,
         review: "Napolean era warfare but with dragons and a world war II kinda vibe with air forces",
@@ -224,7 +224,7 @@ export const fictionReadBookData: ReadInterface[] = [
     },
     {
         title: "Rangers Apprentice",
-        imagePath: "/data/bookCovers/rangers_apprentice.iffi",
+        imagePath: "/bookCovers/rangers_apprentice.iffi",
         author: "John Flanagan",
         rating: 9,
         review: "Fantasy/D&D vibes to the max",
@@ -232,7 +232,7 @@ export const fictionReadBookData: ReadInterface[] = [
     },
     {
         title: "Graceling",
-        imagePath: "/data/bookCovers/graceling.iffi",
+        imagePath: "/bookCovers/graceling.iffi",
         author: "Kristin Cashore",
         rating: 10,
         review: "Fantasy/D&D vibes with super skills/super power. A bit slow towards the end",
@@ -240,7 +240,7 @@ export const fictionReadBookData: ReadInterface[] = [
     },
     {
         title: "Old Mans War",
-        imagePath: "/data/bookCovers/old_mans_war.iffi",
+        imagePath: "/bookCovers/old_mans_war.iffi",
         author: "John Scalzi",
         rating: 10,
         review: "Sci-fi where the universe is a lot bigger and more intimidating than you'd think",
@@ -248,7 +248,7 @@ export const fictionReadBookData: ReadInterface[] = [
     },
     {
         title: "Midnight at the well of Souls",
-        imagePath: "/data/bookCovers/well_of_souls.iffi",
+        imagePath: "/bookCovers/well_of_souls.iffi",
         author: "Jack L Chalker",
         rating: 10,
         review: "Intergalactic travel, a variety of species, reincarnation and an experimental world at the center of it all",
@@ -256,7 +256,7 @@ export const fictionReadBookData: ReadInterface[] = [
     },
     {
         title: "A Night in the Lonesome October",
-        imagePath: "/data/bookCovers/a_night_in_the_lonesome_october.iffi",
+        imagePath: "/bookCovers/a_night_in_the_lonesome_october.iffi",
         author: "Roger Zelazny",
         rating: 10,
         review: "Halloween, murder mystery vibes, well written and keeps you guessing until the very end",
@@ -264,7 +264,7 @@ export const fictionReadBookData: ReadInterface[] = [
     },
     {
         title: "Eleanore and Park",
-        imagePath: "/data/bookCovers/elenore_and_park.iffi",
+        imagePath: "/bookCovers/elenore_and_park.iffi",
         author: "Rainbow Rowell",
         rating: 7,
         review: "Another book that captures how it feels to be 17",
@@ -272,7 +272,7 @@ export const fictionReadBookData: ReadInterface[] = [
     },
     {
         title: "City of Bones",
-        imagePath: "/data/bookCovers/city_of_bones.iffi",
+        imagePath: "/bookCovers/city_of_bones.iffi",
         author: "Cassandra Clare",
         rating: 9,
         review: "Dystopian ficition with teenagers and super powers before it was cool",

@@ -1,0 +1,51 @@
+.hobbies-books-grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.5fr 1fr 1fr;
+      grid-template-columns: 0.5fr 1fr 1fr;
+  -ms-grid-rows: 0.07fr 1fr 0.07fr 1fr;
+      grid-template-rows: 0.07fr 1fr 0.07fr 1fr;
+      grid-template-areas: "Learning . ." ". LearningToRead LearningRead" "Fiction . ." ". FictionToRead FictionRead";
+  gap: 0px 5px;
+}
+
+.hobbies-books-grid-container .hobbies-books-learning {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: Learning;
+}
+
+.hobbies-books-grid-container .hobbies-books-learning-to-read {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: LearningToRead;
+}
+
+.hobbies-books-grid-container .hobbies-books-learning-read {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: LearningRead;
+}
+
+.hobbies-books-grid-container .hobbies-books-fiction {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: Fiction;
+}
+
+.hobbies-books-grid-container .hobbies-books-fiction-to-read {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: FictionToRead;
+}
+
+.hobbies-books-grid-container .hobbies-books-fiction-read {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: FictionRead;
+}
+
+.hobbies-books-grid-container ul {
+  padding-left: 15px;
+}
+/*# sourceMappingURL=reading.css.map */
