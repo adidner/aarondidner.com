@@ -3,16 +3,20 @@ import { ReadInterface } from "../data/bookData";
 import Dialog from '@material-ui/core/Dialog';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
+import "../styles/bookmodal.scss"
+import { graphql } from 'gatsby'
 
 export interface LearningBookModalProps extends ReadInterface{
     visibility: boolean;
     handleClose: () => void;
+    data?: any;
 }
 
-export const LearningBookModal:React.FC<LearningBookModalProps> = ({visibility, handleClose, title, author, imagePath, rating, review, publishDate, takeAways}) => {
+export const LearningBookModal:React.FC<LearningBookModalProps> = ({visibility, handleClose, title, author, imagePath, rating, review, publishDate, takeAways, data}) => {
     
     const [internalVisibility, setInternalVisibility] = useState(visibility);
     
+    console.log("data",data);
     
     useEffect(() => {
         setInternalVisibility(visibility);
@@ -20,11 +24,12 @@ export const LearningBookModal:React.FC<LearningBookModalProps> = ({visibility, 
     
 
     return(
-        <Dialog open={internalVisibility} onClose={() => handleClose()}>
+        <Dialog open={internalVisibility} onClose={() => handleClose()} >
+            <div className={"book-modal-background"}>
             <DialogTitle>
-                <div style={{display: 'flex', flexDirection:'row', alignItems:'center', justifyContent:"space-between"}}>  
-                    <h2 >{title}</h2> 
-                    <h3 >{rating} / 10</h3>
+                <div className={"book-modal-title-grid"}>  
+                    <h2 className={"book-modal-title-text"}>{title}</h2> 
+                    <h3 className={"book-modal-rating"}>{rating} / 10</h3>
                 </div>
             </DialogTitle>
             <DialogContent >
@@ -37,7 +42,7 @@ export const LearningBookModal:React.FC<LearningBookModalProps> = ({visibility, 
                     <div style={{paddingLeft: "15px"}}>
                         <h3>Review</h3>
                         <div>{review}</div>
-                        <h3>Take Aways</h3>
+                        <h3 style={{paddingTop: "10px"}}>Take Aways</h3>
                             <ul style={{paddingLeft: "25px"}}>
                                 {
                                     takeAways?.map((element) => {
@@ -50,6 +55,9 @@ export const LearningBookModal:React.FC<LearningBookModalProps> = ({visibility, 
                 
                 {/* <button onClick={() => handleClose()}>close</button> */}
             </DialogContent>
+            </div>
         </Dialog>
     );
 }
+
+
