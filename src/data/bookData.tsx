@@ -132,6 +132,14 @@ export const learningReadBookData: ReadInterface[] = [
         review: "A great book exploring various ideas of what happens after death and various paradigms underwhich the universe might actually work",
         takeAways: ["The book doesn't really have takeaways in that it was mostly a fun, lighter, though provoking read"],
     },
+    {
+        title: "The Design of Everyday Things",
+        imagePath: "/bookCovers/the_design_of_everyday_things.jpg",
+        author: "Donal Norman",
+        rating: 9,
+        review: "Really intesteresting and talks a lot about how to design things well. A bit dated but most of the concepts still apply to today. Plus its cool to see how these some of the predictions came to fruition. Like how if you've ever pulled on a door that should have been pushed, that shouldn't have happened. It should have been obvious",
+        takeAways: ["Visibility, Good Conceptual Models, Good Mappings, Feedback for User Action","Memory is only precise enought to ditinguish among often and existing choice ex coins vs fake coins","Long Term Memomory: Rote: Bad b/c no undersatnding of ability to fix okay sometimes alphabet and emergency proceedure","LTM: Relationship: Propper interpretation/mental mapping -> controll design will make sense, relates model to actions","LTM: Mental: model -> derive behavior, slow but can extrapolate to situations unsean or troubleshoot", "If you need to label its probably wrong", "limit user choice w/ constraints logical, cultural, semantic, physical", "Visibility, relevant parts visible, feedback, actions create visible change", "Confirm name over action when deleting or better yet make rec overy easily possible for a while", "Errors created by various means: social pressure, expensive, false reporting of dange and threat of punishment, time pressure. For instance if a plane needed to be delayed for saftey concern their would be all those pressure to ignore in favor of all of these", "Warnings tend not to work because we someone want to violate for specific use cases and the system can't distinguish intentional vs accidental behavior", "Forcing functionas: Interlock. saftey pin for grenade. Lockin. auto save file. Lockout. Make unsafe action hard to do. ", "Keyboards and a good enough design for the vast majority", "More features -> more complexity of controls. Limit features and group logically"],
+    },
 ] 
 
 export const fictionReadBookData: ReadInterface[] = [
