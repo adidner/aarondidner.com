@@ -3,9 +3,13 @@
 Things to do
 
 Short term
-- Get reading book popup to work at all -> probably can't find data because it isn't public, try moving into the static folder
+- Reading part
+    - Get reading book popup to work at all -> probably can't find data because it isn't public, try moving into the static folder
+    - Get the reading part to be cards with Image and Title -> maybe some shadow hover stuff to show clickable
+    - Sub nav like searchable museum or side nav like other sites (left column). For jumping to fiction read, fiction unread, learning read, learning unread
+    - Get the reading part to create a new page when clicked on that shows title, image, my thoughts, and my review
 - Get Personal Projects part to work and be dynamic in nature
-- Some drop downs that don't suck lol 
+- Some drop downs that don't suck lol https://www.youtube.com/watch?v=S-VeYcOCFZw&t=3s
 - Some refinement of what I'm trying to do in certain sections (perhaps a scaling back of scope at least until I get to a good beta stage so I can update my resume accordingly)
 - Update Resume and LinkedIn and site Resume to include Fearlesses current work
 
