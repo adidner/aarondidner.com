@@ -502,6 +502,28 @@ export const learningReadBookData: ReadInterface[] = [
             "Task should be just on the edge if current abilities. ",
             "You have to do it even when its boring sometimes. ",
             "System for reflection and review of habits",
+            "Building habits should be gradual -> think smallest and easiest version or peice to start and then bigger and bigger to where you want it to be"
+        ],
+    },
+
+    {
+        title: "Freakonomics",
+        imagePath: "",
+        author: "Steven D. Levitt and Stephen J. Dubmer",
+        rating: 10,
+        review: "",
+        takeAways: [ 
+            "Abortion reduces crime",
+            "Interesting idea, realestate agents sell their own homes for more on average because the extra effort for a slightly better offer for you they only see 1% of from their comission while you see a much larger % so they just want you to take the first reasonable offer rather than holding out for the best offer",
+            "Conventional wisdom is generally bad, Look at incentives, dramatic effects tend to have distant or subtle causes, experts use their informational advantages for their own game, knowing what to measure and how to measure is powerful",
+            "Incentives can be Moral, Economic or Social -> be careful when changing out one for another",
+            "Anyone will cheat given the right incentive",
+            "The who you buy something from or the context in which you buy influences what you see as a fair price. ",
+            "KKK, thwarted by having their secret information exposed through Superman Radio show, causing members to loose faith and specialness and potentially the respect of their children. ",
+            "Information asymmetry being the cause of issues like mechanics over charging or doctors over charging and such. Car salesman. But internet combats this a bit by closing the asymmetry of information ",
+            "Fear that motivates actions known by those with info asymmetry ",
+            "We are more afraid of things that are out of our control even if they are less likely",
+            "Parenting is about things you are over things you do. Also genetics play a large role",
         ],
     },
 
