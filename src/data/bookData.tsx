@@ -586,6 +586,26 @@ export const learningReadBookData: ReadInterface[] = [
             "Be careful when increasing mini habits, they should always be incredibily easy",
         ],
     },
+    {
+        title: "Date-onomics",
+        imagePath: "",
+        author: "Jon Birger",
+        rating: 8,
+        review: "Pretty interesting. If not a bit repetitive in the middle. Talks about how supply plays a big role in dating. IE available members of the opposite gender generally. How certain cities make it really hard with really bad gender ratios and this motivates action (hookup culture or settling down culture). Also some insights into this within the context of religion and what can be done about this.",
+        takeAways: [
+            "Theirs a large gap between the number of college educated women and men in the US, far more women then men are going to college now-adays",
+            "Hookup culture when way more men and settling down culture where more women",
+            "Affecting religions like mormanism and jewdaism too",
+            "Mormanism because missions are alienating men, causing the ratio to get out of wack",
+            "Jewdaism becuase older men are looking to marry younger women and are waiting longer such that older women are out of the dating pool but young women are being taken by older men",
+            "But not amongs the type of jews where they are only marrying those their own age",
+            "Ultimatums work because they create artificial scarcity",
+            "Really attractive women don't get approacehd very often because most men feel as if their odds are bad because they're competing with every other precieved male in the room all at once",
+            "Solutions include, thinking of gender ratio of your city, college and profession. Also white collar women marrying blue collar men",
+            "Longer broader solutions mean getting more men into college (because most women who are college educated want a college educated man but their just aren't as many). The solution here may be holding men back a year in school to make up for slower brain development/maturity",
+            "",
+        ],
+    },
 
 ]  
 
