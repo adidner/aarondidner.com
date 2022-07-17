@@ -603,7 +603,6 @@ export const learningReadBookData: ReadInterface[] = [
             "Really attractive women don't get approacehd very often because most men feel as if their odds are bad because they're competing with every other precieved male in the room all at once",
             "Solutions include, thinking of gender ratio of your city, college and profession. Also white collar women marrying blue collar men",
             "Longer broader solutions mean getting more men into college (because most women who are college educated want a college educated man but their just aren't as many). The solution here may be holding men back a year in school to make up for slower brain development/maturity",
-            "",
         ],
     },
 
