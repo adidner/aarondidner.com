@@ -605,6 +605,54 @@ export const learningReadBookData: ReadInterface[] = [
             "Longer broader solutions mean getting more men into college (because most women who are college educated want a college educated man but their just aren't as many). The solution here may be holding men back a year in school to make up for slower brain development/maturity",
         ],
     },
+    {
+        title: "Your Money or Your Life",
+        imagePath: "",
+        author: "Vicki Robin and Joe Dominguez",
+        rating: 8,
+        review: "",
+        takeAways: [
+            "",
+            "",
+            "",
+        ],
+    },
+    {
+        title: "Rule #1",
+        imagePath: "",
+        author: "Phil Town",
+        rating: 8,
+        review: "",
+        takeAways: [
+            "4 M's, Meaning to you, Moat, Management, Big Margin of Saftey (50% margin of error)",
+            "Look to things that are passions, talents of yours, make you money or you spend money on. If something is in many of these categories it may be a good field of understanding for you and thus a good field for investment",
+            "",
+            "",
+            "",
+        ],
+    },
+    {
+        title: "",
+        imagePath: "",
+        author: "",
+        rating: 8,
+        review: "",
+        takeAways: [
+            "",
+            "",
+            "",
+        ],
+    },
+    {
+        title: "",
+        imagePath: "",
+        author: "",
+        rating: 8,
+        review: "",
+        takeAways: [
+
+        ],
+    },
 
 ]  
 
