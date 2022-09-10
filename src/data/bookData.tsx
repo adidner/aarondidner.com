@@ -646,7 +646,8 @@ export const learningReadBookData: ReadInterface[] = [
         takeAways: [
             "4 M's, Meaning to you, Moat, Management, Big Margin of Saftey (50% margin of error)",
             "Look to things that are passions, talents of yours, make you money or you spend money on. If something is in many of these categories it may be a good field of understanding for you and thus a good field for investment",
-            "",
+            "Find a moat -> a company with a strong protective competitive advantage. ",
+            "Like branding andreconigzabliity (Starbucks, coke, disney), Prices (Walmart), Trade secret or pattent (taste of coke, pzers patterns on certain drugs),",
             "",
             "",
         ],
