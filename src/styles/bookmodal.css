@@ -1,0 +1,32 @@
+.book-modal-background {
+  background: radial-gradient(at top left, #2b096b 0%, #922be1 100%);
+  background-repeat: no-repeat;
+  padding-bottom: 15px;
+}
+
+.book-modal-title-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr auto;
+      grid-template-rows: 1fr auto;
+      grid-template-areas: "title rating";
+  gap: 0px 15px;
+}
+
+.book-modal-title-grid .book-modal-title-text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+}
+
+.book-modal-title-grid .book-modal-rating {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: rating;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=bookmodal.css.map */

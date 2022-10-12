@@ -653,27 +653,25 @@ export const learningReadBookData: ReadInterface[] = [
         ],
     },
     {
-        title: "",
+        title: "Return of the Lazy DM",
         imagePath: "",
-        author: "",
-        rating: 8,
-        review: "",
+        author: "Michael E Shae",
+        rating: 10,
+        review: "Absolutely wonderful, so many great points about how to make sure your game has all the most important elements you need as well as some really creative ideas with regards to keeping prep time down",
         takeAways: [
-            "",
-            "",
-            "",
+            "Look at this doc if you want details notes, as they are to length to put here: https://docs.google.com/document/d/1Be4-zUoc3LtB4U9MuwrNPsZNa6ggpm8UsZFhEm16bfw/edit?usp=sharing "
         ],
     },
-    {
-        title: "",
-        imagePath: "",
-        author: "",
-        rating: 8,
-        review: "",
-        takeAways: [
+    // {
+    //     title: "",
+    //     imagePath: "",
+    //     author: "",
+    //     rating: 8,
+    //     review: "",
+    //     takeAways: [
 
-        ],
-    },
+    //     ],
+    // },
 
 ]  
 
@@ -878,14 +876,6 @@ export const fictionToReadBookData: ToReadInterface[] = [
 
 export const learningToReadBookData: ToReadInterface[] = [
     {
-        title: 'Your Money or Your Life',
-        author: 'Viki Robin',
-    },
-    {
-        title: 'Sum',
-        author: 'David Eagleman',
-    },
-    {
         title: 'Talking to Strangers',
         author: 'Malcom Gladwell',
     },
@@ -894,36 +884,12 @@ export const learningToReadBookData: ToReadInterface[] = [
         author: 'Matt Ridley',
     },
     {
-        title: 'Freakanomics',
-        author: 'Stephen Dubner & Steven Levitt',
-    },
-    {
-        title: 'Atomic Habits',
-        author: 'James Clear',
-    },
-    {
         title: 'The Automatic Millionaire',
         author: 'David Bach',
     },
     {
-        title: '7 Habits of Highly Effective People',
-        author: 'Stephen Covey',
-    },
-    {
         title: 'Mans Search for Meaning',
         author: 'Victor Frankel',
-    },
-    {
-        title: 'Atlas Shrugged',
-        author: 'Ayn Rand',
-    },
-    {
-        title: 'Fountainhead',
-        author: 'Ayn Rand',
-    },
-    {
-        title: 'Wealth Attraction',
-        author: 'Dan Kennedy',
     },
     {
         title: 'Mastery',
@@ -934,24 +900,8 @@ export const learningToReadBookData: ToReadInterface[] = [
         author: 'Robert Cialdini',
     },
     {
-        title: 'Cashflow Quadrant',
-        author: 'Robert Kiyosaki',
-    },
-    {
-        title: 'Money Master the Game',
-        author: 'Tony Robbins',
-    },
-    {
-        title: 'Brotopia',
-        author: 'Emily Chang',
-    },
-    {
         title: 'One up on Wall Street',
         author: 'John Rothchild & Peter Lynch',
-    },
-    {
-        title: 'Rule #1',
-        author: 'Phil Town',
     },
     {
         title: 'Attached',
@@ -962,36 +912,12 @@ export const learningToReadBookData: ToReadInterface[] = [
         author: 'Cal Newport',
     },
     {
-        title: 'The Little Book of Common Sense Investing',
-        author: 'John Bogie',
-    },
-    {
-        title: 'Unwritten Laws, the Unofficial Rules of Line',
-        author: 'Hugh Rawson',
-    },
-    {
         title: 'Quiet',
         author: 'Susan Cain',
     },
     {
-        title: 'Show Your Work',
-        author: 'Austin Kleon',
-    },
-    {
         title: 'Anything You Want',
         author: 'Derek Sivers',
-    },
-    {
-        title: 'How to Take Smart Notes',
-        author: 'S. Ahrens',
-    },
-    {
-        title: 'Philosophy of Software Design',
-        author: 'John Ousterhout',
-    },
-    {
-        title: 'Design of Everyday Things',
-        author: 'Don Norman',
     },
     {
         title: 'The Mindset',

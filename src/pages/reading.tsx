@@ -39,7 +39,7 @@ function Reading({data}) {
   function InnardsPlusModal(props: ReadInterface){    
     return (
       <div>
-        <li onClick={() => setModalState({...props, visibility: true, handleClose: () => setModalState(initialModalState)})}>
+        <li className={"book-info-bullet"} onClick={() => setModalState({...props, visibility: true, handleClose: () => setModalState(initialModalState)})}>
           {props.title + " by " + props.author} 
         </li>
       </div>

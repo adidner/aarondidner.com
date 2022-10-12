@@ -35,21 +35,25 @@ export const LearningBookModal:React.FC<LearningBookModalProps> = ({visibility, 
             <DialogContent >
                 
                 <div style={{display: 'flex', flexDirection:'row'}}>
-                    <div>
+                    {/* <div>
                         <img src={imagePath} alt={"book cover"} height={"275px"} width={"183px"}/>
-                        {/* <h3>{author}</h3>  */}
-                    </div>
+                        <h3>{author}</h3> 
+                    </div> */}
                     <div style={{paddingLeft: "15px"}}>
                         <h3>Review</h3>
                         <div>{review}</div>
-                        <h3 style={{paddingTop: "10px"}}>Take Aways</h3>
+                        {(takeAways != undefined && takeAways.length > 0) && 
+                        <>
+                            <h3 style={{paddingTop: "10px"}}>Take Aways</h3>
                             <ul style={{paddingLeft: "25px"}}>
                                 {
                                     takeAways?.map((element) => {
-                                        return <li >{element}</li>
+                                        return <li>{element}</li>
                                     })
                                 }
                             </ul>
+                        </>    
+                        }
                         </div>
                 </div>
                 

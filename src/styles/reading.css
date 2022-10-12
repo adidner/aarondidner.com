@@ -48,4 +48,9 @@
 .hobbies-books-grid-container ul {
   padding-left: 15px;
 }
+
+.book-info-bullet:hover {
+  color: orange;
+  cursor: pointer;
+}
 /*# sourceMappingURL=reading.css.map */
