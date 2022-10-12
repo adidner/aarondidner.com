@@ -23,10 +23,33 @@
 
  export const experienceJobdata: experienceJobInterface[] = [
     {
+        roleTitle: "Software Engineer II ",
+        companyTitle: "Fearless",
+        startDate: "Sep 2021",
+        endDate: "Present",
+        location: "Baltimore, MD",
+        experienceBody: [
+            {
+                introPrompt: "Working to develop complex reusable components for the National Museum of African American History and Culture",
+                bulletList: ["Implemented new reusable components based on our needs in React","Worked with our designer to clarify existing design in line with functional requirements","Tested components via Jest unit tests, and website via Cypress End to End tests","Modified the Craft CMS backend system to allow for customization of components","Deployed Code to Staging, Development and Production environments" ],
+            },
+            {
+                introPrompt: "Enhancing the Scrum/Agile processes",
+                bulletList: ["Wrote Stories based on Product Owner requirements/feature requests","Assisted team in revising ceremony practices (PR revision process, Refinement)","Aided in recommendation and integration of new tooling (Hygen, Chromatic, Storybook)", ],
+            }
+        ],
+        bestPart: "",//"Designing and implementing my own tools from scratch is always a lot of fun because its something I created mostly from scratch. Working on the component library has given me a lot of expose to lower level concepts and expertise and learning of css selectors and css priority. Also more experience unit testing. Flexability is pretty nice in terms of working from home and everyone is generally quite nice and friendly. Also on the component library team I have excellent mentor ship and good pratices enforced",
+        worstPart: "",//"The main code base outside the component library is quite old and has a lot of tech debt that makes many modern practices challenging. Feedback is soemtimes hard to come by and timelines as well. Sometimes I feel like my work is being undervalued despite its high quality and volume",
+        reflection: "",
+        companySize: "",
+        techStack: ["React", "", ""],
+        teamSize: "",
+    },
+    {
         roleTitle: "Associate Software Engineer",
         companyTitle: "Alion Science and Technology",
         startDate: "July 2020",
-        endDate: "Present",
+        endDate: "Aug 2021",
         location: "Hanover, MD",
         experienceBody: [
             {

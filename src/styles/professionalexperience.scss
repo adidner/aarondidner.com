@@ -1,7 +1,9 @@
+
 .skill-container{
     display: flex;
     flex-direction: row; 
     align-items: center;
+    max-width: 1000px;
 }
 
 .skill-title {
@@ -25,12 +27,18 @@
         justify-content: space-between;
     } 
 
-    // .experience-title-bullet-list {
+    .experience-title-bullet-list {
+        margin: 15px 0;
+    }   
 
-    // }
+    .intro-prompt {
+        margin: 0 0 7px 0;
+    }
 
     & li {
         margin-left: 25px;
+        // font-style: italic;
+        margin-left: 35px;
     }
 
 }

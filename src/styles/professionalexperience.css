@@ -9,6 +9,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 1000px;
 }
 
 .skill-title {
@@ -37,7 +38,16 @@
           justify-content: space-between;
 }
 
+.experience-card-container .experience-title-bullet-list {
+  margin: 15px 0;
+}
+
+.experience-card-container .intro-prompt {
+  margin: 0 0 7px 0;
+}
+
 .experience-card-container li {
   margin-left: 25px;
+  margin-left: 35px;
 }
 /*# sourceMappingURL=professionalexperience.css.map */

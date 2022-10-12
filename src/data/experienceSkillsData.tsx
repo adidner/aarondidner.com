@@ -7,19 +7,19 @@ export interface experienceSkillInterface {
 
 export const experienceSkillData: experienceSkillInterface[] = [
     {
-        title: "Front End Web Developement",
-        skills: ["React","Redux","TypeScript","HTML", "CSS", "Javascript", "SCSS"]
+        title: "Front End",
+        skills: ["React","Redux","TypeScript","HTML", "CSS", "Javascript", "SCSS", "Jest", "Cypress", "Storybook", "Chromatic"]
     },
     {
-        title: "Backend Web Development",
-        skills: ["C#","MySQL","SQL","Python","NodeJS", "C++", "Java"]
+        title: "Backend",
+        skills: ["Craft CMS", "Docker", "C#", ".NET","MySQL","SQL","Python","NodeJS", "C++", "Java"]
     },
     {
-        title: "Mobile Development",
-        skills: ["React Native","Expo","Java","Kotlin"]
+        title: "Mobile",
+        skills: ["React Native","Java","Kotlin"]
     },
     {
         title: "Misc Skills",
-        skills: ["Git Version Control","Test-Driven Developement","UI/UX Design","Agile Developement"]
+        skills: ["Git Version Control","Test-Driven Developement","UI/UX Design","Agile", "Scrum"]
     },
 ];

@@ -10,7 +10,7 @@ function Resume() {
   return (
     <Layout>
       <div>
-        <a download href={"/Aaron-Didner-Resume.pdf"}><div className="btn" style={{float: 'right'}}>Dowload</div></a>
+        <a download href={"/Aaron_Didner_Resume_10_11_22.pdf"}><div className="btn" style={{float: 'right'}}>Dowload</div></a>
         <div className={"main-containers"}>
             
           <h2>Skills</h2>
@@ -67,7 +67,7 @@ function ExperienceCard(props: experienceJobInterface){
           props.experienceBody.map((currentVal) => {
             return (
               <div className={"experience-title-bullet-list"}>
-                  <div>{currentVal.introPrompt}</div>
+                  <div className={"intro-prompt"}>{currentVal.introPrompt}</div>
                   <ul>
                     {
                       currentVal.bulletList.map((current) => <li>{current}</li>)
