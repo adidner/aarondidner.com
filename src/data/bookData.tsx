@@ -792,6 +792,16 @@ export const learningReadBookData: ReadInterface[] = [
             "- Plan when stuck (start at the beginning of tasks or the end of the goal achieved and brain dump tasks on either end)",
         ],
     },
+    {
+        title: "The Lazy DM's Companion",
+        imagePath: "",
+        author: "Sly Flourish's",
+        rating: 10,
+        review: "Fantastic book full of useful advice, and tables information to help any aspiring DM create situations and senarios abound",
+        takeAways: [
+            "NA"
+        ],
+    },
     // {
     //     title: "",
     //     imagePath: "",
