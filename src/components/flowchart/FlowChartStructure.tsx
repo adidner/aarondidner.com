@@ -115,6 +115,7 @@ const youWantSomethingYouCantHave2 = new flowChartEvent(
 )
 
 // const  = new flowChartEvent("", [{label: , destination: }]);
+// Test thingy
 
 export const rootFlowChartEvent = new flowChartEvent(
   "How are you feeling Sad, Anxious and Overwhelmed",
