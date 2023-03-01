@@ -53,7 +53,7 @@ export function FlowChartPage(props: FlowChartPageInterface) {
               return prevState
             })
           }
-          className={"btn"}
+          className={"btn flowchart-back-button"}
         >
           back
         </div>
