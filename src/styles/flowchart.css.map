@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAGA,AAAA,yBAAyB,CAAC;EACtB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,cAAc,EAAE,MAAM;CACzB",
+    "mappings": "AAGA,AAAA,yBAAyB,CAAC;EACtB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,cAAc,EAAE,MAAM;CACzB;;AAED,AAAA,sBAAsB,CAAC;EACnB,gBAAgB,EAAE,OAAO;CAC5B",
     "sources": [
         "flowchart.scss"
     ],
