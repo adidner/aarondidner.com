@@ -9,7 +9,7 @@ const youFeelHurt3 = new flowChartEvent(
 const youFeelHurt2 = new flowChartEvent(
   "Someone has said/done something that has upset you",
   [{ label: "continue", destination: youFeelHurt3 }]
-)
+  )
 
 const youJustFeelWrong4 = new flowChartEvent(
   "It's fine if it's just a lost day. Ask for a hug, take medication if you just can't shake it, watch a movie (try Disney or Dreamworks) and keep watching TV until you can do something else without falling apart. Gently ask if people will turn down their volumn for a bit (10 minutes) or eat later (10 minutes from now)",
@@ -114,8 +114,45 @@ const youWantSomethingYouCantHave2 = new flowChartEvent(
   [{ label: "continue", destination: youWantSomethingYouCantHave3 }]
 )
 
+const guiltyAboutThePast4 = new flowChartEvent("Do a self compassion activity and then reflect on whether the timing is good to make an apology. If it is, make a genuine apology, honesly recognizing the ways you were unkind"
+, []
+)
+const guiltyAboutThePast3 = new flowChartEvent("You know that begging for forgiveness and apologizing excessively and crying dramatically are all avoidance tactics. You don't want to face that you're not perfect, but you need to reflect"
+, [{label: "continue" , destination: guiltyAboutThePast4}]
+)
+const guiltyAboutThePast2 = new flowChartEvent("You're scared that you may still have to face the consequences of your actions and that may come in the form of lost friends or owning up to scummy parts of yourself that you didn't know about before"
+, [{label: "continue" , destination: guiltyAboutThePast3}]
+)
+
+const disgustedAboutThePast6 = new flowChartEvent("You need to complete the cycle. Ask for orders and do a physical activity"
+, []
+)
+const disgustedAboutThePast5 = new flowChartEvent("You can unstick yourself, but you're going to need to ask for help because you will not be able to start the process by yourself."
+, [{label: "continue" , destination: disgustedAboutThePast6}]
+)
+const disgustedAboutThePast4 = new flowChartEvent("You feel like you've been wronged, but now you aren't sure what to do because you got incredibly emotional before recognizing you were triggered. You are stuck and need to get out, but can't find the motivation"
+, [{label: "continue" , destination: disgustedAboutThePast5}]
+)
+const disgustedAboutThePast3 = new flowChartEvent("You're triggered and are desparately seeking confirmation that what happened to you was unfair and not your fault"
+, [{label: "continue" , destination: disgustedAboutThePast4}]
+)
+const disgustedAboutThePast2 = new flowChartEvent("You may have gotten here through a different conversation and didn't realize until halfway through the conversation that you don't care about the conversation anymore, you're just upset"
+, [{label: "continue" , destination: disgustedAboutThePast3}]
+)
+
+const youreRememberingThePast = new flowChartEvent(
+  "You feel like you've made an irreparable mistake in the past and need to beg for forgiveness, which you don't deserve", 
+  [
+    {
+      label: "You're scared that you hurt someone in the past", destination: guiltyAboutThePast2
+    },
+    {
+      label: "You got here from another conversation", destination: disgustedAboutThePast2
+    }
+  ])
+
 // const  = new flowChartEvent("", [{label: , destination: }]);
-// Test thingy
+
 
 export const rootFlowChartEvent = new flowChartEvent(
   "How are you feeling Sad, Anxious and Overwhelmed",
@@ -125,8 +162,8 @@ export const rootFlowChartEvent = new flowChartEvent(
     { label: "You feel guilty", destination: tempBlankPage },
     { label: "You feel guilty, but also hurt", destination: tempBlankPage },
     {
-      label: "You feel guilty because of the past",
-      destination: tempBlankPage,
+      label: "You are remembering past events",
+      destination: youreRememberingThePast,
     },
     { label: "You feel disgusted", destination: tempBlankPage },
     { label: "You've been rejected", destination: tempBlankPage },
