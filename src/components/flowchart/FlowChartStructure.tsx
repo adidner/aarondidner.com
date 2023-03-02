@@ -2,6 +2,84 @@ import { flowChartEvent } from "./FlowChartPage"
 
 const tempBlankPage = new flowChartEvent("Blank Temp", [])
 
+const ForComfortAsk = new flowChartEvent(
+  "I'm in a lot of pain right now and I'm really tired. If you have the capacity, could you just sit and cuddle with me for a bit until the pain meds start working and I get warmed up? If you can't do that right now, is today/tonight possible? If today/tonight is not possible, can I have a hug now? estimated time ~ 30 minutes, estimated effort ~ very low, just cuddles",
+  []
+)
+const ForComfortActivity = new flowChartEvent(
+  "Body relaxing activity - start a timer for 3 minutes. For this three minutes try again to focus on all of the places that pain (physical and emotional) are presenting themselves in your body. Do not try to make the pain go away. I know you're tired of it and you want to be done, but for three minutes you're going to try one more time to push past exhaustion to listen to you body not your mind. Take a deep breath and out. Is your head hurting? How is it hurting? Follow the pressure from one side of the pain to the end of it. Take another deep breath in and out. Is your throat closing? Don't try to turn it into tears, but don't stop it either. Can you feel the full circle of pressure around your throat? Another breath. Is your chest queasy? Can you feel how it changes as your breath in? Breathe. Does your lower back hurt? Do you have cramps? Can you still feel the wave pattern? Last breath. Are your feet cold? Can you feel where the cold starts and where it ends? When the timer goes off give the card to Aaron (or nearby close person) and if they need time, take a shower and watch a movie.",
+  []
+)
+const ForComfort = new flowChartEvent("Comfort", [
+  { label: "Ask", destination: ForComfortAsk },
+  { label: "Activity", destination: ForComfortActivity },
+])
+
+const ForConfirmationAsk = new flowChartEvent(
+  "I am struggling with the guilt of not being able to do enough right now. If you have the capacity, could we go over this problem I'm having one more time to make sure that there is nothing new? I'm mostly just looking for confirmation that I've done what I can and then some validation that the world it shit sometimes. If you can't do that right now, is today/tonight possible? If today/tonight is not possible, can I have a hug now? estimated time ~ 45 minutes, estimated effort ~ moderate, I need you to listen and tell me if you can think of something new",
+  []
+)
+const ForConfirmationActivity = new flowChartEvent(
+  "Visualization activity - start a timer for 3 minutes. You're trying to look for job. I know you can't find it right now and that you probabaly don't even want to, but for just the next three minutes we are going to exist in it, even if you can't feel it. Think of a place where nothing can be wrong - think of the warm sunshine, the warm wind on your face with your eyes close, the muted sound of water in your ears as you float on your back in warm water. Think of the people you are most familiar with and think of them smiling. They're talking about something they love, something they are proud of. They are feeling joy and you are near them. For a few moments, just be with them while they are happy. Go back to the warm wind and the water for a second. Try smiling. It will feel weird. Do it anyway and hold it for a bit. If you have the space, stretch out now onto your back and start over - find a place, feel that place, think of your people and think of their joy. When the timer goes off, giver the card to Aaron (or a nearby close person) and if they need time, take a shower and watch a movie.",
+  []
+)
+const ForConfirmation = new flowChartEvent("Confirmation", [
+  { label: "Ask", destination: ForConfirmationAsk },
+  { label: "Activity", destination: ForConfirmationActivity },
+])
+
+const ForOrdersAsk = new flowChartEvent(
+  "I'm feeling very stuck and I think I need to just start moving, but I can't figure out what to do. If you've got the capacity, can we go on a walk, play some frisbee, or go to Costco? If you can't do that right now, can you literally just give me something to do so I have a reason to start moving again (like adding days to your to-do list notepad) and then can we go on a walk later? If no walk today, can I have a hug now? estimated time ~ 20-60 minutes, estimated effort ~ low, a couple of laps outside will be sufficient",
+  []
+)
+const ForOrdersActivity = new flowChartEvent(
+  "Physical activity - Do this after asking for orders. If you have premade plans, the steps are as follows: 1) identify the very first step; 2) as a lifeless zombie, do that step and that step only, 3) keep going. You goal is move for at least a half hour and don't really stop moving until you've started to feel your head clear. You aren't able to motivate yourself to move at the moment, so you are going to break down every single movement into its own step: 1) as a lifeless zombie, put on pants, a shirt, socks, and running shoes; 2) Get your phone (and headphones) and go outside; 3) set a time for five minutes and start walking; 4) get in your car; 5) set up your bluetooth and start the 'Lighter' playlist; 6) drive to 100 Governor's Gate Ln; 7) go through the whole playlist; 8) return home The ultimate goal is to end with some kind of exercise - a run, a circuit, preferrably a run",
+  []
+)
+const ForOrders = new flowChartEvent("Orders", [
+  { label: "Ask", destination: ForOrdersAsk },
+  { label: "Activity", destination: ForOrdersActivity },
+])
+
+const SincereApologyAsk = new flowChartEvent(
+  "I can't pre-write this one - you need to think about what matters most to the person and how to genuinely present it at the right time. You should get out a pen and paper and break down the situation and the underlying need you have failed to meet.",
+  []
+)
+const SincereApologyActivity = new flowChartEvent(
+  "Self compassion activity - Start a 3 minute timer. So you received evidence that you are not perfect and you are capable of human error and someone else has suffered the consequences of that action. Even if you don't feel like you deserve it, you need to find it in your heart to forgive yourself. The end goal is to be truly focused on being better for the person you hurt, not absolving of your guilt. First, take yourself out of the scenario and imagine the person who made the mistake was someone else. Now reflect on the circumstance. Can you see how the actions you made were a combination of circumstances and your own personal traumas or misconceptions playing themselves out? When you're ready, focus on the affection you feel for the person you hurt and recognize them intentially as only human. Identify the underlying human need that you failed to meet even though the circumstances were such as they were. ",
+  []
+)
+const SincereApology = new flowChartEvent("Sincere Apology", [
+  { label: "Ask", destination: SincereApologyAsk },
+  { label: "Activity", destination: SincereApologyActivity },
+])
+
+const CommunicateHurtingAsk = new flowChartEvent(
+  "I can't pre-write this one",
+  []
+)
+const CommunicateHurtingActivity = new flowChartEvent(
+  "Identity reflection activity - take out a pen and paper (electronic or otherwise) and write down what was said that is bothering you. Did thiis attack your identity OR did was it that they didn't care? If they didn't care, it's probably because they were tired or distracted (because people do care about you and what you care about Rachel), so ask them if they could care at a different time. Ask them if they could care now - but also express that you were a bit hurt when they said they didn't care, though you do understand that they were tired. This will probably be enough to get you the enthusiasm you needed. If this attacked your identity - is it true (or do you feel like it is true)? Take some time to consider if there is any truth to what they said that you are intinctually against. Take the pieces that are important and then remember IF THEY SAY THEY JUST WANT YOU TO BE HAPPY AND SUCCESSFUL, THE MOST IMPORANT THING IS TO LIVE YOUR LIFE HAPPY. ",
+  []
+)
+const CommunicateHurting = new flowChartEvent("Communicate Hurt", [
+  { label: "Ask", destination: CommunicateHurtingAsk },
+  { label: "Activity", destination: CommunicateHurtingActivity },
+])
+
+const FutureSelfAsk = new flowChartEvent(
+  "I'm so overwhelmed with an emotion I do not want, but this is something you must do on your own because others are here to support you, not to absorb your disappointment or to regulate your emotions for you, but there is someone who can help you; Ask a gentler, more regulated Rachel to give you all the care and compassion you are so desparate to have from someone else.",
+  []
+)
+const FutureSelfActivity = new flowChartEvent(
+  "Future self activity - this one might take a few cycles, because there is no one but you and the you that you can conjure to lean on and also ultimately the goal is to weather a storm of emotions until they become less powerful. To start you won't want to feel better and that's fine. Act like a child - want something you can't have, demand that the world is unfair, hate yourself for being born. Each time you say these things you are looking for a response. A gentler, kinder, future Rachel will be that response. Have her remind you that you can want things, but you can't press that on other people. Have her rub your arms and remind you that the world is unfair, but you'll have more strength to face it if you can get some sleep. Have her dry your tears and remind you that you don't really want to die, you're just overwhemled. Do this again and again until you really can go to sleep. You might work out some details while you're here, but the only person you can cry to until after you get some sleep is this gentler future Rachel.",
+  []
+)
+const FutureSelf = new flowChartEvent("Future Self", [
+  { label: "Ask", destination: FutureSelfAsk },
+  { label: "Activity", destination: FutureSelfActivity },
+])
+
 const youFeelHurt3 = new flowChartEvent(
   "This things was said for some reason - do an identity reflection activity and during check ins (or at a later time) communicate how you felt",
   []
