@@ -7,12 +7,12 @@ const ForComfortAsk = new flowChartEvent(
   []
 )
 const ForComfortActivity = new flowChartEvent(
-  "Body relaxing activity - start a timer for 3 minutes. For this three minutes try again to focus on all of the places that pain (physical and emotional) are presenting themselves in your body. Do not try to make the pain go away. I know you're tired of it and you want to be done, but for three minutes you're going to try one more time to push past exhaustion to listen to you body not your mind. Take a deep breath and out. Is your head hurting? How is it hurting? Follow the pressure from one side of the pain to the end of it. Take another deep breath in and out. Is your throat closing? Don't try to turn it into tears, but don't stop it either. Can you feel the full circle of pressure around your throat? Another breath. Is your chest queasy? Can you feel how it changes as your breath in? Breathe. Does your lower back hurt? Do you have cramps? Can you still feel the wave pattern? Last breath. Are your feet cold? Can you feel where the cold starts and where it ends? When the timer goes off give the card to Aaron (or nearby close person) and if they need time, take a shower and watch a movie.",
+  "Body relaxing activity - start a timer for 3 minutes. For this three minutes try again to focus on all of the places that pain (physical and emotional) are presenting themselves in your body. Do not try to make the pain go away. I know you're tired of it and you want to be done, but for three minutes you're going to try one more time to push past exhaustion to listen to you body not your mind. Take a deep breath and out. Is your head hurting? How is it hurting? Follow the pressure from one side of the pain to the end of it. Take another deep breath in and out. Is your throat closing? Don't try to turn it into tears, but don't stop it either. Can you feel the full circle of pressure around your throat? Another breath. Is your chest queasy? Can you feel how it changes as your breath in? Breathe. Does your lower back hurt? Do you have cramps? Can you still feel the wave pattern? Last breath. Are your feet cold? Can you feel where the cold starts and where it ends? When the timer goes off ask for comfort from someone nearby who you can trust and if they need time or no one is around, take a shower and watch a movie. This will pass.",
   []
 )
 const ForComfort = new flowChartEvent("Comfort", [
-  { label: "Ask for comfort", destination: ForComfortAsk },
   { label: "Body relaxing activity", destination: ForComfortActivity },
+  { label: "Ask for comfort", destination: ForComfortAsk },
 ])
 
 const FindDistractionAsk = new flowChartEvent(
@@ -29,11 +29,11 @@ const FindDistraction = new flowChartEvent("Distraction", [
 ])
 
 const ForConfirmationAsk = new flowChartEvent(
-  "I am struggling with the guilt of not being able to do enough right now. If you have the capacity, could we go over this problem I'm having one more time to make sure that there is nothing new? I'm mostly just looking for confirmation that I've done what I can and then some validation that the world it shit sometimes. If you can't do that right now, is today/tonight possible? If today/tonight is not possible, can I have a hug now? estimated time ~ 45 minutes, estimated effort ~ moderate, I need you to listen and tell me if you can think of something new",
+  "Ask this of someone you trust (in this case it's not necessary that they are in physical proximity to you): I am struggling with the guilt of not being able to do enough right now. If you have the capacity, could we go over this problem I'm having one more time to make sure that there is nothing new? I'm mostly just looking for confirmation that I've done what I can and then some validation that the world it shit sometimes. If you can't do that right now, is today/tonight possible? If today/tonight is not possible, can I have a hug now? estimated time ~ 45 minutes, estimated effort ~ moderate, I need you to listen and tell me if you can think of something new",
   []
 )
 const ForConfirmationActivity = new flowChartEvent(
-  "Visualization activity - start a timer for 3 minutes. You're trying to look for job. I know you can't find it right now and that you probabaly don't even want to, but for just the next three minutes we are going to exist in it, even if you can't feel it. Think of a place where nothing can be wrong - think of the warm sunshine, the warm wind on your face with your eyes close, the muted sound of water in your ears as you float on your back in warm water. Think of the people you are most familiar with and think of them smiling. They're talking about something they love, something they are proud of. They are feeling joy and you are near them. For a few moments, just be with them while they are happy. Go back to the warm wind and the water for a second. Try smiling. It will feel weird. Do it anyway and hold it for a bit. If you have the space, stretch out now onto your back and start over - find a place, feel that place, think of your people and think of their joy. When the timer goes off, giver the card to Aaron (or a nearby close person) and if they need time, take a shower and watch a movie.",
+  "Visualization activity - start a timer for 3 minutes. You're trying to look for joy. I know you can't find it right now and that you probabaly don't even want to, but for just the next three minutes we are going to exist in it, even if you can't feel it. Think of a place where nothing can be wrong - think of the warm sunshine, the warm wind on your face with your eyes closed, the muted sound of water in your ears as you float on your back in warm water. Think of the people you are most familiar with and think of them smiling. They're talking about something they love, something they are proud of. They are feeling joy and you are near them. For a few moments, just be with them while they are happy. Go back to the warm wind and the water for a second. Try smiling. It will feel weird. Do it anyway and hold it for a bit. If you have the space, stretch out now onto your back and start over - find a place, feel that place, think of your people and think of their joy. When the timer goes off take a shower and watch a movie. You're at the end of your rope and it's time to take a break.",
   []
 )
 const ForConfirmation = new flowChartEvent("Confirmation", [
@@ -46,7 +46,7 @@ const ForOrdersAsk = new flowChartEvent(
   []
 )
 const ForOrdersActivity = new flowChartEvent(
-  "Physical activity - Do this after asking for orders. If you have premade plans, the steps are as follows: 1) identify the very first step; 2) as a lifeless zombie, do that step and that step only, 3) keep going. You goal is move for at least a half hour and don't really stop moving until you've started to feel your head clear. You aren't able to motivate yourself to move at the moment, so you are going to break down every single movement into its own step: 1) as a lifeless zombie, put on pants, a shirt, socks, and running shoes; 2) Get your phone (and headphones) and go outside; 3) set a time for five minutes and start walking; 4) get in your car; 5) set up your bluetooth and start the 'Lighter' playlist; 6) drive to 100 Governor's Gate Ln; 7) go through the whole playlist; 8) return home The ultimate goal is to end with some kind of exercise - a run, a circuit, preferrably a run",
+  "Physical activity - Do this after asking for orders. If you have premade plans, the steps are as follows: 1) identify the very first step; 2) as a lifeless zombie, do that step and that step only, 3) keep going. Your goal is move for at least a half hour and don't really stop moving until you've started to feel your head clear. If you do NOT have premade plans, you aren't going to be able to motivate yourself to move at the moment, so you are going to break down every single movement into its own step: 1) as a lifeless zombie, put on pants, a shirt, socks, and running shoes; 2) Get your phone (and headphones) and go outside; 3) set a timer for five minutes and start walking; 4) get in your car; 5) set up your bluetooth and start the 'Lighter' playlist; 6) drive in a loop to three nearby restaurants (like Panera or Taco Bell); 7) go through the whole playlist; 8) return home. The ultimate goal is to end with some kind of exercise - a run, a circuit, preferrably a run.",
   []
 )
 const ForOrders = new flowChartEvent("Orders", [
@@ -55,16 +55,16 @@ const ForOrders = new flowChartEvent("Orders", [
 ])
 
 const SincereApologyAsk = new flowChartEvent(
-  "I can't pre-write this one - you need to think about what matters most to the person and how to genuinely present it at the right time. You should get out a pen and paper and break down the situation and the underlying need you have failed to meet.",
+  "I can't pre-write this one - you need to think about what matters most to the person you hurt and how to genuinely present an apology at the right time. You should get out a pen and paper and break down the situation and the underlying need you have failed to meet if it's not glaringly obvious already.",
   []
 )
 const SincereApologyActivity = new flowChartEvent(
-  "Self compassion activity - Start a 3 minute timer. So you received evidence that you are not perfect and you are capable of human error and someone else has suffered the consequences of that action. Even if you don't feel like you deserve it, you need to find it in your heart to forgive yourself. The end goal is to be truly focused on being better for the person you hurt, not absolving of your guilt. First, take yourself out of the scenario and imagine the person who made the mistake was someone else. Now reflect on the circumstance. Can you see how the actions you made were a combination of circumstances and your own personal traumas or misconceptions playing themselves out? When you're ready, focus on the affection you feel for the person you hurt and recognize them intentially as only human. Identify the underlying human need that you failed to meet even though the circumstances were such as they were. ",
+  "Self compassion activity - Start a 3 minute timer. So you received evidence that you are not perfect and you are capable of human error and someone else has suffered the consequences of that action. Even if you don't feel like you deserve it, you need to find it in your heart to forgive yourself. The end goal is to be truly focused on being better for the person you hurt, not absolving of your guilt. First, take yourself out of the scenario and imagine the person who made the mistake was someone else. Now reflect on the circumstance. Can you see how the actions you made were a combination of circumstances and your own personal traumas or misconceptions playing themselves out? When you're ready, focus on the affection you feel for the person you hurt and intentially recognize them and yourself as only human. Identify the underlying human need that you failed to meet even though the circumstances were such as they were. ",
   []
 )
 const SincereApology = new flowChartEvent("Sincere Apology", [
-  { label: "Make a sincere apology", destination: SincereApologyAsk },
   { label: "Self compassion activity", destination: SincereApologyActivity },
+  { label: "Make a sincere apology", destination: SincereApologyAsk },
 ])
 
 const CommunicateHurtingAsk = new flowChartEvent(
@@ -72,20 +72,20 @@ const CommunicateHurtingAsk = new flowChartEvent(
   []
 )
 const CommunicateHurtingActivity = new flowChartEvent(
-  "Identity reflection activity - take out a pen and paper (electronic or otherwise) and write down what was said that is bothering you. Did thiis attack your identity OR did was it that they didn't care? If they didn't care, it's probably because they were tired or distracted (because people do care about you and what you care about Rachel), so ask them if they could care at a different time. Ask them if they could care now - but also express that you were a bit hurt when they said they didn't care, though you do understand that they were tired. This will probably be enough to get you the enthusiasm you needed. If this attacked your identity - is it true (or do you feel like it is true)? Take some time to consider if there is any truth to what they said that you are intinctually against. Take the pieces that are important and then remember IF THEY SAY THEY JUST WANT YOU TO BE HAPPY AND SUCCESSFUL, THE MOST IMPORANT THING IS TO LIVE YOUR LIFE HAPPY. ",
+  "Identity reflection activity - take out a pen and paper (electronic or otherwise) and write down what was said or done that is bothering you. Did this attack your identity OR did was it that they didn't care? If they didn't care, it's probably because they were tired or distracted (because people do care about you and what you care about), so ask them if they could care at a different time. Ask them if they could care now - but also express that you were a bit hurt when they said they didn't care, though you do understand that they were tired. This will probably be enough to get you the enthusiasm you needed. If this attacked your identity - is it true (or do you feel like it is true)? Take some time to consider if there is any truth to what they said that you are intinsictually against. Take the pieces that are important and then remember IF THEY SAY THEY JUST WANT YOU TO BE HAPPY AND SUCCESSFUL, THE MOST IMPORANT THING IS TO LIVE YOUR LIFE HAPPY. ",
   []
 )
 const CommunicateHurting = new flowChartEvent("Communicate Hurt", [
-  { label: "Ask for a conversation", destination: CommunicateHurtingAsk },
   { label: "Identity reflection activity", destination: CommunicateHurtingActivity },
+  { label: "Ask for a conversation", destination: CommunicateHurtingAsk },
 ])
 
 const FutureSelfAsk = new flowChartEvent(
-  "You so overwhelmed with an emotion I do not want, but this is something you must do on your own because others are here to support you, not to absorb your disappointment or to regulate your emotions for you, but there is someone who can help you; Ask a gentler, more regulated You to give you all the care and compassion you are so desparate to have from someone else.",
+  "You so overwhelmed with an emotion you do not want, but this is something you must do on your own because others are here to support you, not to absorb your disappointment or to regulate your emotions for you, but there is someone who can help you; Ask a gentler, more regulated You to give you all the care and compassion you are so desparate to have from someone else.",
   []
 )
 const FutureSelfActivity = new flowChartEvent(
-  "Future self activity - this one might take a few cycles, because there is no one but you and the you that you can conjure to lean on and also ultimately the goal is to weather a storm of emotions until they become less powerful. To start you won't want to feel better and that's fine. Act like a child - want something you can't have, demand that the world is unfair, hate yourself for being born. Each time you say these things you are looking for a response. A gentler, kinder, future You will be that response. Have her remind you that you can want things, but you can't press that on other people. Have her rub your arms and remind you that the world is unfair, but you'll have more strength to face it if you can get some sleep. Have her dry your tears and remind you that you don't really want to die, you're just overwhemled. Do this again and again until you really can go to sleep. You might work out some details while you're here, but the only person you can cry to until after you get some sleep is this gentler future You.",
+  "Future self activity - this one might take a few cycles, because there is no one but you and the you that you can conjure to lean on and also ultimately the goal is to weather a storm of emotions until they become less powerful. To start you won't want to feel better and that's fine. Act like a child - want something you can't have, demand that the world is unfair, hate yourself for being born. Each time you say these things you are looking for a response. A gentler, kinder, future You will be that response. Have them remind you that you can want things, but you can't press that on other people. Have them rub your arms and remind you that the world is unfair, but you'll have more strength to face it if you can get some sleep. Have them dry your tears and remind you that you don't really want to die, you're just overwhemled. Do this again and again until you really can go to sleep. You might work out some details while you're here, but the only person you can cry to until after you get some sleep is this gentler future You.",
   []
 )
 const FutureSelf = new flowChartEvent("Future Self", [
@@ -137,7 +137,7 @@ const youWantHelp2 = new flowChartEvent(
 )
 
 const theresNoWayOut8 = new flowChartEvent(
-  "Recenter on joy as the motivation for life. You can't find it right now, but I promise that it is there. Do a visualization activity and ask for confirmation.",
+  "Recenter on joy as the motivation for life. You can't find it right now, but I promise that it is there. Ask for confirmation and do a visualization activity.",
   [{label: "continue", destination: ForConfirmation}]
 )
 const theresNoWayOut7 = new flowChartEvent(
@@ -201,16 +201,20 @@ const youWantSomethingYouCantHave2 = new flowChartEvent(
   [{ label: "continue", destination: youWantSomethingYouCantHave3 }]
 )
 
-const guiltyAboutThePast4 = new flowChartEvent(
+const guiltyAboutThePast5 = new flowChartEvent(
   "Do a self compassion activity and then reflect on whether the timing is good to make an apology. If it is, make a genuine apology, honesly recognizing the ways you were unkind",
   [{label: "continue", destination: SincereApology}]
 )
-const guiltyAboutThePast3 = new flowChartEvent(
+const guiltyAboutThePast4 = new flowChartEvent(
   "You know that begging for forgiveness and apologizing excessively and crying dramatically are all avoidance tactics. You don't want to face that you're not perfect, but you need to reflect",
+  [{ label: "continue", destination: guiltyAboutThePast5 }]
+)
+const guiltyAboutThePast3 = new flowChartEvent(
+  "You're scared that you may still have to face the consequences of your actions and that may come in the form of lost friends or owning up to scummy parts of yourself that you didn't know about before",
   [{ label: "continue", destination: guiltyAboutThePast4 }]
 )
 const guiltyAboutThePast2 = new flowChartEvent(
-  "You're scared that you may still have to face the consequences of your actions and that may come in the form of lost friends or owning up to scummy parts of yourself that you didn't know about before",
+  "You feel like you've made an irreparable mistake in the past and need to beg for forgiveness, which you don't deserve",
   [{ label: "continue", destination: guiltyAboutThePast3 }]
 )
 
@@ -231,19 +235,19 @@ const disgustedAboutThePast3 = new flowChartEvent(
   [{ label: "continue", destination: disgustedAboutThePast4 }]
 )
 const disgustedAboutThePast2 = new flowChartEvent(
-  "You may have gotten here through a different conversation and didn't realize until halfway through the conversation that you don't care about the conversation anymore, you're just upset",
+  "Other people are in some way indicating that your reaction is aggressive or too severe. You can't stop crying or you find yourself repeating the same phrases and uncomfrotable that others aren't just agreeing with you.",
   [{ label: "continue", destination: disgustedAboutThePast3 }]
 )
 
 const youreRememberingThePast = new flowChartEvent(
-  "You feel like you've made an irreparable mistake in the past and need to beg for forgiveness, which you don't deserve",
+  "Something has reminded you of past events and you feel disproportinately unsettled relative to the context of the reminder. You may have gotten here through a different conversation and didn't realize until halfway through the conversation that you don't care about the conversation anymore, you're just upset",
   [
     {
       label: "You're scared that you hurt someone in the past",
       destination: guiltyAboutThePast2,
     },
     {
-      label: "You got here from another conversation",
+      label: "You're having trouble explaining the problem",
       destination: disgustedAboutThePast2,
     },
   ]
@@ -293,20 +297,14 @@ const YouFeelGuilty2 = new flowChartEvent(
 // const  = new flowChartEvent("", [{label: , destination: }]);
 
 export const rootFlowChartEvent = new flowChartEvent(
-  "How are you feeling Sad, Anxious and Overwhelmed",
+  "Are you feeling Sad, Anxious and Overwhelmed?",
   [
-    { label: "You want help", destination: youWantHelp2 },
-    { label: "There's no way out", destination: theresNoWayOut2 },
-    { label: "You feel guilty", destination: YouFeelGuilty2 },
-    {
-      label: "You are remembering past events",
-      destination: youreRememberingThePast,
-    },
-    {
-      label: "You want something you can't have",
-      destination: youWantSomethingYouCantHave2,
-    },
-    { label: "You feel hurt", destination: youFeelHurt2 },
-    { label: "You just feel wrong", destination: youJustFeelWrong2 },
+    {label: "You're in pain and want comfort", destination: youWantHelp2 },
+    {label: "You feel guilty about hurting someone", destination: YouFeelGuilty2 },
+    {label: "You want something you can't have", destination: youWantSomethingYouCantHave2 },
+    {label: "You are remembering past events", destination: youreRememberingThePast },
+    {label: "You feel hurt by someone", destination: youFeelHurt2 },
+    {label: "You're afraid there's no way out", destination: theresNoWayOut2 },
+    {label: "You just feel wrong all over", destination: youJustFeelWrong2 },
   ]
 )
