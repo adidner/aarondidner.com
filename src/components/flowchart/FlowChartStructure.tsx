@@ -3,7 +3,7 @@ import { flowChartEvent } from "./FlowChartPage"
 const tempBlankPage = new flowChartEvent("Blank Temp", [])
 
 const ForComfortAsk = new flowChartEvent(
-  "I'm in a lot of pain right now and I'm really tired. If you have the capacity, could you just sit and cuddle with me for a bit until the pain meds start working and I get warmed up? If you can't do that right now, is today/tonight possible? If today/tonight is not possible, can I have a hug now? estimated time ~ 30 minutes, estimated effort ~ very low, just cuddles",
+  "Say this to someone close to you who you trust: 'I'm in a lot of pain right now and I'm really tired. If you have the capacity, could you just sit and cuddle with me for a bit until the pain meds start working and I get warmed up? If you can't do that right now, is today/tonight possible? If today/tonight is not possible, can I have a hug now?' Estimated time ~ 30 minutes, estimated effort ~ very low, just cuddles",
   []
 )
 const ForComfortActivity = new flowChartEvent(
@@ -11,8 +11,21 @@ const ForComfortActivity = new flowChartEvent(
   []
 )
 const ForComfort = new flowChartEvent("Comfort", [
-  { label: "Ask", destination: ForComfortAsk },
-  { label: "Activity", destination: ForComfortActivity },
+  { label: "Ask for comfort", destination: ForComfortAsk },
+  { label: "Body relaxing activity", destination: ForComfortActivity },
+])
+
+const FindDistractionAsk = new flowChartEvent(
+  "Ask this of someone close to you who you trust: Ask for a hug and make sure to communicate that your agitation is not related to them. Gently ask if people around you will turn down their volumn for a bit (10 minutes) or eat later (10 minutes from now).",
+  []
+)
+const FindDistractionActivity = new flowChartEvent(
+  "Distraction Activity - It's fine if it's just a lost day. Take medication if you just can't shake it and you just can't calm down. Then, get a blanket and some hot tea and watch a movie (try Disney or Dreamworks) and keep watching TV until you can do something else without falling apart. ",
+  []
+)
+const FindDistraction = new flowChartEvent("Distraction", [
+  { label: "Ask for accommodation", destination: FindDistractionAsk },
+  { label: "Find a distraction", destination: FindDistractionActivity },
 ])
 
 const ForConfirmationAsk = new flowChartEvent(
@@ -24,12 +37,12 @@ const ForConfirmationActivity = new flowChartEvent(
   []
 )
 const ForConfirmation = new flowChartEvent("Confirmation", [
-  { label: "Ask", destination: ForConfirmationAsk },
-  { label: "Activity", destination: ForConfirmationActivity },
+  { label: "Ask for confirmation", destination: ForConfirmationAsk },
+  { label: "Visualization activity", destination: ForConfirmationActivity },
 ])
 
 const ForOrdersAsk = new flowChartEvent(
-  "I'm feeling very stuck and I think I need to just start moving, but I can't figure out what to do. If you've got the capacity, can we go on a walk, play some frisbee, or go to Costco? If you can't do that right now, can you literally just give me something to do so I have a reason to start moving again (like adding days to your to-do list notepad) and then can we go on a walk later? If no walk today, can I have a hug now? estimated time ~ 20-60 minutes, estimated effort ~ low, a couple of laps outside will be sufficient",
+  "Ask this from something close to you who you can trust: I'm feeling very stuck and I think I need to just start moving, but I can't figure out what to do. If you've got the capacity, can we go on a walk, play some frisbee, or go to Costco? If you can't do that right now, can you literally just give me something to do so I have a reason to start moving again (like adding days to your to-do list notepad) and then can we go on a walk later? If no walk today, can I have a hug now? estimated time ~ 20-60 minutes, estimated effort ~ low, a couple of laps outside will be sufficient",
   []
 )
 const ForOrdersActivity = new flowChartEvent(
@@ -37,8 +50,8 @@ const ForOrdersActivity = new flowChartEvent(
   []
 )
 const ForOrders = new flowChartEvent("Orders", [
-  { label: "Ask", destination: ForOrdersAsk },
-  { label: "Activity", destination: ForOrdersActivity },
+  { label: "Ask for orders", destination: ForOrdersAsk },
+  { label: "Physical activity", destination: ForOrdersActivity },
 ])
 
 const SincereApologyAsk = new flowChartEvent(
@@ -50,12 +63,12 @@ const SincereApologyActivity = new flowChartEvent(
   []
 )
 const SincereApology = new flowChartEvent("Sincere Apology", [
-  { label: "Ask", destination: SincereApologyAsk },
-  { label: "Activity", destination: SincereApologyActivity },
+  { label: "Make a sincere apology", destination: SincereApologyAsk },
+  { label: "Self compassion activity", destination: SincereApologyActivity },
 ])
 
 const CommunicateHurtingAsk = new flowChartEvent(
-  "I can't pre-write this one",
+  "Request a specfic time in the future to have a conversation with the person who said the hurtful thing. No need to present the conversation as doom and gloom. Just communicate that you would like the chance to explain why their statements/actions hurt and that you are not angry. (If you are outwardly angry or upset, wait until those emotions pass before you ask for this conversation.)",
   []
 )
 const CommunicateHurtingActivity = new flowChartEvent(
@@ -63,39 +76,35 @@ const CommunicateHurtingActivity = new flowChartEvent(
   []
 )
 const CommunicateHurting = new flowChartEvent("Communicate Hurt", [
-  { label: "Ask", destination: CommunicateHurtingAsk },
-  { label: "Activity", destination: CommunicateHurtingActivity },
+  { label: "Ask for a conversation", destination: CommunicateHurtingAsk },
+  { label: "Identity reflection activity", destination: CommunicateHurtingActivity },
 ])
 
 const FutureSelfAsk = new flowChartEvent(
-  "I'm so overwhelmed with an emotion I do not want, but this is something you must do on your own because others are here to support you, not to absorb your disappointment or to regulate your emotions for you, but there is someone who can help you; Ask a gentler, more regulated Rachel to give you all the care and compassion you are so desparate to have from someone else.",
+  "You so overwhelmed with an emotion I do not want, but this is something you must do on your own because others are here to support you, not to absorb your disappointment or to regulate your emotions for you, but there is someone who can help you; Ask a gentler, more regulated You to give you all the care and compassion you are so desparate to have from someone else.",
   []
 )
 const FutureSelfActivity = new flowChartEvent(
-  "Future self activity - this one might take a few cycles, because there is no one but you and the you that you can conjure to lean on and also ultimately the goal is to weather a storm of emotions until they become less powerful. To start you won't want to feel better and that's fine. Act like a child - want something you can't have, demand that the world is unfair, hate yourself for being born. Each time you say these things you are looking for a response. A gentler, kinder, future Rachel will be that response. Have her remind you that you can want things, but you can't press that on other people. Have her rub your arms and remind you that the world is unfair, but you'll have more strength to face it if you can get some sleep. Have her dry your tears and remind you that you don't really want to die, you're just overwhemled. Do this again and again until you really can go to sleep. You might work out some details while you're here, but the only person you can cry to until after you get some sleep is this gentler future Rachel.",
+  "Future self activity - this one might take a few cycles, because there is no one but you and the you that you can conjure to lean on and also ultimately the goal is to weather a storm of emotions until they become less powerful. To start you won't want to feel better and that's fine. Act like a child - want something you can't have, demand that the world is unfair, hate yourself for being born. Each time you say these things you are looking for a response. A gentler, kinder, future You will be that response. Have her remind you that you can want things, but you can't press that on other people. Have her rub your arms and remind you that the world is unfair, but you'll have more strength to face it if you can get some sleep. Have her dry your tears and remind you that you don't really want to die, you're just overwhemled. Do this again and again until you really can go to sleep. You might work out some details while you're here, but the only person you can cry to until after you get some sleep is this gentler future You.",
   []
 )
 const FutureSelf = new flowChartEvent("Future Self", [
-  { label: "Ask", destination: FutureSelfAsk },
-  { label: "Activity", destination: FutureSelfActivity },
+  { label: "Ask from future You", destination: FutureSelfAsk },
+  { label: "Future self activity", destination: FutureSelfActivity },
 ])
 
 const youFeelHurt3 = new flowChartEvent(
-  "This things was said for some reason - do an identity reflection activity and during check ins (or at a later time) communicate how you felt",
-  []
+  "This things was said for some reason - do an identity reflection activity and ask for the chance to explain yourself ",
+  [{label: "continue", destination: CommunicateHurting}]
 )
 const youFeelHurt2 = new flowChartEvent(
   "Someone has said/done something that has upset you",
   [{ label: "continue", destination: youFeelHurt3 }]
 )
 
-const youJustFeelWrong4 = new flowChartEvent(
-  "It's fine if it's just a lost day. Ask for a hug, take medication if you just can't shake it, watch a movie (try Disney or Dreamworks) and keep watching TV until you can do something else without falling apart. Gently ask if people will turn down their volumn for a bit (10 minutes) or eat later (10 minutes from now)",
-  []
-)
 const youJustFeelWrong3 = new flowChartEvent(
-  "Probably it's actually emotions causing thoughts and not a single core reason causing your problem. The most imporant things here is to try to stay fair. you're going to mad that people are being so loud or so something. Just keep your tone and impulses in check while you're in the process of sorting things out",
-  [{ label: "continue", destination: youJustFeelWrong4 }]
+  "Probably it's actually emotions causing thoughts and not a single core reason causing your problem. The most imporant things here is to try to stay fair. you're going to mad that people are being so loud or so something. Just keep your tone and impulses in check while you're in the process of sorting things out. Ask for accommdations and find a distraction.",
+  [{ label: "continue", destination: FindDistraction }]
 )
 const youJustFeelWrong2 = new flowChartEvent(
   "You can try and find a reason, in fact you most likely will identify a reason at some point, but you've tried to address the problem via tackling the core reason and still it won't work",
@@ -104,7 +113,7 @@ const youJustFeelWrong2 = new flowChartEvent(
 
 const youWantHelp7 = new flowChartEvent(
   "Recognize that at the moment you just need to bide your time. You're exhausted, but this pain will lessen and get better. Take three minutes to do a body relaxing activity and then ask for comfort",
-  []
+  [{label: "continue", destination: ForComfort}]
 )
 const youWantHelp6 = new flowChartEvent(
   "But this is temporary. Think of all the ways in which this person has shown up for you and supported you. Try hard right now to draw on your affection for them and your understandning of them as only human",
@@ -129,7 +138,7 @@ const youWantHelp2 = new flowChartEvent(
 
 const theresNoWayOut8 = new flowChartEvent(
   "Recenter on joy as the motivation for life. You can't find it right now, but I promise that it is there. Do a visualization activity and ask for confirmation.",
-  []
+  [{label: "continue", destination: ForConfirmation}]
 )
 const theresNoWayOut7 = new flowChartEvent(
   "Remember that things do not change overnight and that sacrifice does not make for a better outcome if you all drown together. You do not want to give more, but that's okay. If you are wondering if there is a way for you to give more, the answer is not today and not tomorrow, but yes, in a little while. ",
@@ -158,7 +167,7 @@ const theresNoWayOut2 = new flowChartEvent(
 
 const proximity3 = new flowChartEvent(
   "Remember, just because they said no, doesn't mean never (unless you get the feeling that they were uncomfortable with the ask), so just think forward to the next time and if you are having trouble calming down, getting frustrated with yourself for wanting something in the first place or angry with yourself for ruining a good thing with emotions you did not plan to have, do a Future Self Activity",
-  []
+  [{label: "continue", destination: FutureSelf}]
 )
 const proximity2 = new flowChartEvent(
   "The other person is a person, and you need to demostrate that they can comfortably turn you down without experiencing emotional backlash. In other words, you need to say 'okay', and move on with your day",
@@ -167,7 +176,7 @@ const proximity2 = new flowChartEvent(
 
 const NOTproximity3 = new flowChartEvent(
   "Most likely they will tell you that they are sorry you didn't get what you want (unless you seriously need a reality check) and at this point you should start looking forward the next time. If you are having trouble calming down, getting frustrated with yourself for wanting something in the first place or angry with yourself for ruining a good thing with emotions you did not plan to have, do a Future Self Activity",
-  []
+  [{label: "continue", destination: FutureSelf}]
 )
 const NOTproximity2 = new flowChartEvent(
   "You can express to a nearby person that you are disappointed or sad about not getting what you wanted and just kind of see where it goes",
@@ -194,7 +203,7 @@ const youWantSomethingYouCantHave2 = new flowChartEvent(
 
 const guiltyAboutThePast4 = new flowChartEvent(
   "Do a self compassion activity and then reflect on whether the timing is good to make an apology. If it is, make a genuine apology, honesly recognizing the ways you were unkind",
-  []
+  [{label: "continue", destination: SincereApology}]
 )
 const guiltyAboutThePast3 = new flowChartEvent(
   "You know that begging for forgiveness and apologizing excessively and crying dramatically are all avoidance tactics. You don't want to face that you're not perfect, but you need to reflect",
@@ -207,7 +216,7 @@ const guiltyAboutThePast2 = new flowChartEvent(
 
 const disgustedAboutThePast6 = new flowChartEvent(
   "You need to complete the cycle. Ask for orders and do a physical activity",
-  []
+  [{label: "continue", destination: ForOrders}]
 )
 const disgustedAboutThePast5 = new flowChartEvent(
   "You can unstick yourself, but you're going to need to ask for help because you will not be able to start the process by yourself.",
@@ -242,7 +251,7 @@ const youreRememberingThePast = new flowChartEvent(
 
 const avoidance4 = new flowChartEvent(
   "Do a self compassion activity and then, make an honest and deeply sincere apology. Also, be strong in showing that you understand the weight of the matter.",
-  []
+  [{label: "continue", destination: SincereApology}]
 )
 const avoidance3 = new flowChartEvent(
   "This feeling of guilt is demanding for resolution, but it cannot resolve by seeking forgiveness. You may not ever feel a resolve, but what's most imporant is that you focus on truly being better, not feeling better",
@@ -255,7 +264,7 @@ const avoidance2 = new flowChartEvent(
 
 const suffer5 = new flowChartEvent(
   "Do a self compassion activity and then, having made an honest and genuine apology, remind the person that you take this very seriously even if you aren't visibly broken up over it, you recognize that this is a big deal.",
-  []
+  [{label: "continue", destination: SincereApology}]
 )
 const suffer4 = new flowChartEvent(
   "This feeling of guilt is demanding for resolution, but it cannot resolve by seeking forgiveness. You may not ever feel a resolve, but what's most imporant is that you focus on truly better, not feeling better",
