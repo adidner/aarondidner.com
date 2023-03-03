@@ -1,13 +1,22 @@
-
-
 Things to do
 
 Short term
+
+- Chart Specific
+
+  - Home button for chart resetting
+    - Top right I think
+    - Maybe want to override the back button functionality on this page?
+  - Rich text editor for the prompt thing
+    - go and find a package for this and then download and test
+
+- Make nav responsive
+
 - Reading part
-    - Get reading book popup to work at all -> probably can't find data because it isn't public, try moving into the static folder
-    - Get the reading part to be cards with Image and Title -> maybe some shadow hover stuff to show clickable
-    - Sub nav like searchable museum or side nav like other sites (left column). For jumping to fiction read, fiction unread, learning read, learning unread
-    - Get the reading part to create a new page when clicked on that shows title, image, my thoughts, and my review
+  - Get reading book popup to work at all -> probably can't find data because it isn't public, try moving into the static folder
+  - Get the reading part to be cards with Image and Title -> maybe some shadow hover stuff to show clickable
+  - Sub nav like searchable museum or side nav like other sites (left column). For jumping to fiction read, fiction unread, learning read, learning unread
+  - Get the reading part to create a new page when clicked on that shows title, image, my thoughts, and my review
 - Get Personal Projects part to work and be dynamic in nature
 - Some drop downs that don't suck lol https://www.youtube.com/watch?v=S-VeYcOCFZw&t=3s
 - Some refinement of what I'm trying to do in certain sections (perhaps a scaling back of scope at least until I get to a good beta stage so I can update my resume accordingly)
@@ -15,14 +24,11 @@ Short term
 
 - Basically also can do tik tok integration where I have a bunch of pages that are auto generated based on a template and an array of tik tok urls, then you can scroll through somehow?
 
-
 - Make site responsive and good on mobile
-- Maybe a QR code to link to my site that I can attach to my resume? That would be kinda neat. 
-
-
+- Maybe a QR code to link to my site that I can attach to my resume? That would be kinda neat.
 
 Long term
+
 - Blog internally?
 - Somehow link legacy site inside of new site (without them being 2 seperate things?)
 - Add some cute little fade in transitions -> https://www.youtube.com/watch?v=_jauXV4oHqU&t=2s
-
