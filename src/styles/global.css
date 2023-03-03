@@ -70,6 +70,7 @@ footer p{
   border-radius: 10px;
   margin-top: 20px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .all-icon-links-container {
