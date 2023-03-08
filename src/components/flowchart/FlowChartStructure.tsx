@@ -42,16 +42,21 @@ const ForConfirmation = new flowChartEvent("Confirmation", [
 ])
 
 const ForOrdersAsk = new flowChartEvent(
-  "Ask this from something close to you who you can trust: I'm feeling very stuck and I think I need to just start moving, but I can't figure out what to do. If you've got the capacity, can we go on a walk, play some frisbee, or go to Costco? If you can't do that right now, can you literally just give me something to do so I have a reason to start moving again (like adding days to your to-do list notepad) and then can we go on a walk later? If no walk today, can I have a hug now? estimated time ~ 20-60 minutes, estimated effort ~ low, a couple of laps outside will be sufficient",
+  "Ask this from something close to you who you can trust: I'm feeling very stuck and I think I need to just start moving, but I can't figure out what to do. If you've got the capacity, can we go on a walk, play some frisbee, or go to Costco? If you can't do that right now, can you literally just give me something to do so I have a reason to start moving again (like adding days to your to-do list notepad or crocheting a hat) or can we go on a walk later or watch an episode of TV? If no walk today, can I have a hug now? estimated time ~ 20-60 minutes, estimated effort ~ moderate, a couple of laps outside or one episode will be sufficient to start",
   []
 )
-const ForOrdersActivity = new flowChartEvent(
+const ForOrdersActivity1 = new flowChartEvent(
   "Physical activity - Do this after asking for orders. If you have premade plans, the steps are as follows: 1) identify the very first step; 2) as a lifeless zombie, do that step and that step only, 3) keep going. Your goal is move for at least a half hour and don't really stop moving until you've started to feel your head clear. If you do NOT have premade plans, you aren't going to be able to motivate yourself to move at the moment, so you are going to break down every single movement into its own step: 1) as a lifeless zombie, put on pants, a shirt, socks, and running shoes; 2) Get your phone (and headphones) and go outside; 3) set a timer for five minutes and start walking; 4) get in your car; 5) set up your bluetooth and start the 'Lighter' playlist; 6) drive in a loop to three nearby restaurants (like Panera or Taco Bell); 7) go through the whole playlist; 8) return home. The ultimate goal is to end with some kind of exercise - a run, a circuit, preferrably a run.",
+  []
+)
+const ForOrdersActivity2 = new flowChartEvent(
+  "Physical activity - Do this after asking for orders. Physical Activity - Do this after asking for orders. It's nighttime, so leaving the house or doing anything intense isn't the most practical. You still need to find a new track for your brain. Your brain is going to try to sabotage you and you'll think this isn't working, but I promise you as a You from a better time, eventually it will start working in your favor. Don't ignore me. Step 1) get up and grab a safety pin, your crochet needle, some black yarn, and your phone. Step 2) get the mushroom cap pattern from your drive and start counting rows. Step 3) When you are interrupted by thoughts of chaos and neverending pain and sadness, close your eyes, plug your ears, and listen to yourself cry. It will come and last longer then you think you can handle and then return to baseline. Step 4) Return to crocheting. Step 5) If this cycle repeats itself long past bedtime, take medication and keep going until you have won the war of attrition and can sleep",
   []
 )
 const ForOrders = new flowChartEvent("Orders", [
   { label: "Ask for orders", destination: ForOrdersAsk },
-  { label: "Physical activity", destination: ForOrdersActivity },
+  { label: "Physical activity daytime", destination: ForOrdersActivity1 },
+  { label: "Physical activity nighttime", destination: ForOrdersActivity2},
 ])
 
 const SincereApologyAsk = new flowChartEvent(
@@ -294,12 +299,38 @@ const YouFeelGuilty2 = new flowChartEvent(
   ]
 )
 
+const youLostYourTrack7 = new flowChartEvent(
+  "You need something which will tip the scales toward a particular activity and set your train on a new track. Ask for orders and do a physical activity",
+  [{label: "continue", destination: ForOrders}]
+)
+const youLostYourTrack6 = new flowChartEvent(
+  "You can unstick yourself, but you're going to need to ask for help because you will not be able to start the process by yourself.",
+  [{label: "continue", destination: youLostYourTrack7}]
+)
+const youLostYourTrack5 = new flowChartEvent(
+  "You are thinking about all of the things you could be doing right now that would be better, but all of them sound scary. You are stuck.",
+  [{label: "continue", destination: youLostYourTrack6}]
+)
+const youLostYourTrack4 = new flowChartEvent(
+  "This is because you were set on a specific track and it's vanished beneath you. Now the directions you can go are infinite and immensely overwhelming as if you are treading water at the center of a lake - you're not in danger, but you feel a deep panic not knowing which way back is best and not wanting to use up all of your energy to swim in the wrong direction",
+  [{ label: "continue", destination: youLostYourTrack5 }]
+)
+const youLostYourTrack3 = new flowChartEvent(
+  "You aren't mad or the level of upset you feel is disproportional to what you think it should be. You cannot specifically identify the emotion you are feeling",
+  [{ label: "continue", destination: youLostYourTrack4 }]
+)
+const youLostYourTrack2 = new flowChartEvent(
+  "You had your mind deeply in on something: a thought you wanted to share, but now isn't the right time for a conversation; an activity you were excited about, but the circumstances have changed.",
+  [{ label: "continue", destination: youLostYourTrack3 }]
+)
+
 // const  = new flowChartEvent("", [{label: , destination: }]);
 
 export const rootFlowChartEvent = new flowChartEvent(
   "Are you feeling Sad, Anxious and Overwhelmed?",
   [
     {label: "You're in pain and want comfort", destination: youWantHelp2 },
+    {label: "Your train lost its track", destination: youLostYourTrack2},
     {label: "You feel guilty about hurting someone", destination: YouFeelGuilty2 },
     {label: "You want something you can't have", destination: youWantSomethingYouCantHave2 },
     {label: "You are remembering past events", destination: youreRememberingThePast },
