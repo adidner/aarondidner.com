@@ -26,7 +26,7 @@ export default function FlowChart({ data }) {
 
   return (
     <Layout>
-      <div className="flowchart-center">
+      <div className="flowchart-outer-page-container">
         <FlowChartPage
           prompt={currentFlowChartEvent.prompt}
           destinationArray={currentFlowChartEvent.destinationArray}

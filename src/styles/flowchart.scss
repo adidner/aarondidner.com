@@ -29,8 +29,15 @@
     visibility: hidden;
 }
 
-.flowchart-center {
+.flowchart-outer-page-container {
     display: flex;
     justify-content: center;
     text-align: center;
+}
+
+.flowchart-prompt-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
 }
