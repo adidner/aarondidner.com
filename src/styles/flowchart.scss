@@ -6,8 +6,31 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 700px;
 }
 
 .flowchart-back-button {
     background-color: #30a5e3;
+}
+
+.flowchart-home-button {
+    background-color: tan;
+    
+}
+
+.flowchart-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+    margin-bottom: 20px;
+}
+
+.flow-chart-hidden {
+    visibility: hidden;
+}
+
+.flowchart-center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }

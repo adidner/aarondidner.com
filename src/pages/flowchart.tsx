@@ -19,16 +19,24 @@ export default function FlowChart({ data }) {
     setCurrentFlowChartEvent(event)
   }
 
+  const resetToHomeEvent = () => {
+    setHistoryStack([])
+    setCurrentFlowChartEvent(rootFlowChartEvent)
+  }
+
   return (
     <Layout>
-      <FlowChartPage
-        prompt={currentFlowChartEvent.prompt}
-        destinationArray={currentFlowChartEvent.destinationArray}
-        setCurrentFlowChartEvent={onSetCurrentFlowChartEvent}
-        historyStack={historyStack}
-        setHistoryStack={setHistoryStack}
-        currentFlowChartEvent={currentFlowChartEvent}
-      />
+      <div className="flowchart-center">
+        <FlowChartPage
+          prompt={currentFlowChartEvent.prompt}
+          destinationArray={currentFlowChartEvent.destinationArray}
+          setCurrentFlowChartEvent={onSetCurrentFlowChartEvent}
+          historyStack={historyStack}
+          setHistoryStack={setHistoryStack}
+          currentFlowChartEvent={currentFlowChartEvent}
+          resetToHomeEvent={resetToHomeEvent}
+        />
+      </div>
     </Layout>
   )
 }
