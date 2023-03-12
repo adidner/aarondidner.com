@@ -56,7 +56,7 @@ const ForOrdersActivity2 = new flowChartEvent(
 const ForOrders = new flowChartEvent("Orders", [
   { label: "Ask for orders", destination: ForOrdersAsk },
   { label: "Physical activity daytime", destination: ForOrdersActivity1 },
-  { label: "Physical activity nighttime", destination: ForOrdersActivity2},
+  { label: "Physical activity nighttime", destination: ForOrdersActivity2 },
 ])
 
 const SincereApologyAsk = new flowChartEvent(
@@ -81,7 +81,10 @@ const CommunicateHurtingActivity = new flowChartEvent(
   []
 )
 const CommunicateHurting = new flowChartEvent("Communicate Hurt", [
-  { label: "Identity reflection activity", destination: CommunicateHurtingActivity },
+  {
+    label: "Identity reflection activity",
+    destination: CommunicateHurtingActivity,
+  },
   { label: "Ask for a conversation", destination: CommunicateHurtingAsk },
 ])
 
@@ -100,7 +103,7 @@ const FutureSelf = new flowChartEvent("Future Self", [
 
 const youFeelHurt3 = new flowChartEvent(
   "This things was said for some reason - do an identity reflection activity and ask for the chance to explain yourself ",
-  [{label: "continue", destination: CommunicateHurting}]
+  [{ label: "continue", destination: CommunicateHurting }]
 )
 const youFeelHurt2 = new flowChartEvent(
   "Someone has said/done something that has upset you",
@@ -108,7 +111,7 @@ const youFeelHurt2 = new flowChartEvent(
 )
 
 const youJustFeelWrong3 = new flowChartEvent(
-  "Probably it's actually emotions causing thoughts and not a single core reason causing your problem. The most imporant things here is to try to stay fair. you're going to mad that people are being so loud or so something. Just keep your tone and impulses in check while you're in the process of sorting things out. Ask for accommdations and find a distraction.",
+  "Probably it's actually emotions causing thoughts and not a single core reason causing your problem. \n\n The most imporant things here is to try to stay fair. you're going to mad that people are being so loud or so something. Just keep your tone and impulses in check while you're in the process of sorting things out. Ask for accommdations and find a distraction.",
   [{ label: "continue", destination: FindDistraction }]
 )
 const youJustFeelWrong2 = new flowChartEvent(
@@ -118,7 +121,7 @@ const youJustFeelWrong2 = new flowChartEvent(
 
 const youWantHelp7 = new flowChartEvent(
   "Recognize that at the moment you just need to bide your time. You're exhausted, but this pain will lessen and get better. Take three minutes to do a body relaxing activity and then ask for comfort",
-  [{label: "continue", destination: ForComfort}]
+  [{ label: "continue", destination: ForComfort }]
 )
 const youWantHelp6 = new flowChartEvent(
   "But this is temporary. Think of all the ways in which this person has shown up for you and supported you. Try hard right now to draw on your affection for them and your understandning of them as only human",
@@ -143,7 +146,7 @@ const youWantHelp2 = new flowChartEvent(
 
 const theresNoWayOut8 = new flowChartEvent(
   "Recenter on joy as the motivation for life. You can't find it right now, but I promise that it is there. Ask for confirmation and do a visualization activity.",
-  [{label: "continue", destination: ForConfirmation}]
+  [{ label: "continue", destination: ForConfirmation }]
 )
 const theresNoWayOut7 = new flowChartEvent(
   "Remember that things do not change overnight and that sacrifice does not make for a better outcome if you all drown together. You do not want to give more, but that's okay. If you are wondering if there is a way for you to give more, the answer is not today and not tomorrow, but yes, in a little while. ",
@@ -172,7 +175,7 @@ const theresNoWayOut2 = new flowChartEvent(
 
 const proximity3 = new flowChartEvent(
   "Remember, just because they said no, doesn't mean never (unless you get the feeling that they were uncomfortable with the ask), so just think forward to the next time and if you are having trouble calming down, getting frustrated with yourself for wanting something in the first place or angry with yourself for ruining a good thing with emotions you did not plan to have, do a Future Self Activity",
-  [{label: "continue", destination: FutureSelf}]
+  [{ label: "continue", destination: FutureSelf }]
 )
 const proximity2 = new flowChartEvent(
   "The other person is a person, and you need to demostrate that they can comfortably turn you down without experiencing emotional backlash. In other words, you need to say 'okay', and move on with your day",
@@ -181,7 +184,7 @@ const proximity2 = new flowChartEvent(
 
 const NOTproximity3 = new flowChartEvent(
   "Most likely they will tell you that they are sorry you didn't get what you want (unless you seriously need a reality check) and at this point you should start looking forward the next time. If you are having trouble calming down, getting frustrated with yourself for wanting something in the first place or angry with yourself for ruining a good thing with emotions you did not plan to have, do a Future Self Activity",
-  [{label: "continue", destination: FutureSelf}]
+  [{ label: "continue", destination: FutureSelf }]
 )
 const NOTproximity2 = new flowChartEvent(
   "You can express to a nearby person that you are disappointed or sad about not getting what you wanted and just kind of see where it goes",
@@ -208,7 +211,7 @@ const youWantSomethingYouCantHave2 = new flowChartEvent(
 
 const guiltyAboutThePast5 = new flowChartEvent(
   "Do a self compassion activity and then reflect on whether the timing is good to make an apology. If it is, make a genuine apology, honesly recognizing the ways you were unkind",
-  [{label: "continue", destination: SincereApology}]
+  [{ label: "continue", destination: SincereApology }]
 )
 const guiltyAboutThePast4 = new flowChartEvent(
   "You know that begging for forgiveness and apologizing excessively and crying dramatically are all avoidance tactics. You don't want to face that you're not perfect, but you need to reflect",
@@ -225,7 +228,7 @@ const guiltyAboutThePast2 = new flowChartEvent(
 
 const disgustedAboutThePast6 = new flowChartEvent(
   "You need to complete the cycle. Ask for orders and do a physical activity",
-  [{label: "continue", destination: ForOrders}]
+  [{ label: "continue", destination: ForOrders }]
 )
 const disgustedAboutThePast5 = new flowChartEvent(
   "You can unstick yourself, but you're going to need to ask for help because you will not be able to start the process by yourself.",
@@ -260,7 +263,7 @@ const youreRememberingThePast = new flowChartEvent(
 
 const avoidance4 = new flowChartEvent(
   "Do a self compassion activity and then, make an honest and deeply sincere apology. Also, be strong in showing that you understand the weight of the matter.",
-  [{label: "continue", destination: SincereApology}]
+  [{ label: "continue", destination: SincereApology }]
 )
 const avoidance3 = new flowChartEvent(
   "This feeling of guilt is demanding for resolution, but it cannot resolve by seeking forgiveness. You may not ever feel a resolve, but what's most imporant is that you focus on truly being better, not feeling better",
@@ -273,7 +276,7 @@ const avoidance2 = new flowChartEvent(
 
 const suffer5 = new flowChartEvent(
   "Do a self compassion activity and then, having made an honest and genuine apology, remind the person that you take this very seriously even if you aren't visibly broken up over it, you recognize that this is a big deal.",
-  [{label: "continue", destination: SincereApology}]
+  [{ label: "continue", destination: SincereApology }]
 )
 const suffer4 = new flowChartEvent(
   "This feeling of guilt is demanding for resolution, but it cannot resolve by seeking forgiveness. You may not ever feel a resolve, but what's most imporant is that you focus on truly better, not feeling better",
@@ -301,15 +304,15 @@ const YouFeelGuilty2 = new flowChartEvent(
 
 const youLostYourTrack7 = new flowChartEvent(
   "You need something which will tip the scales toward a particular activity and set your train on a new track. Ask for orders and do a physical activity",
-  [{label: "continue", destination: ForOrders}]
+  [{ label: "continue", destination: ForOrders }]
 )
 const youLostYourTrack6 = new flowChartEvent(
   "You can unstick yourself, but you're going to need to ask for help because you will not be able to start the process by yourself.",
-  [{label: "continue", destination: youLostYourTrack7}]
+  [{ label: "continue", destination: youLostYourTrack7 }]
 )
 const youLostYourTrack5 = new flowChartEvent(
   "You are thinking about all of the things you could be doing right now that would be better, but all of them sound scary. You are stuck.",
-  [{label: "continue", destination: youLostYourTrack6}]
+  [{ label: "continue", destination: youLostYourTrack6 }]
 )
 const youLostYourTrack4 = new flowChartEvent(
   "This is because you were set on a specific track and it's vanished beneath you. Now the directions you can go are infinite and immensely overwhelming as if you are treading water at the center of a lake - you're not in danger, but you feel a deep panic not knowing which way back is best and not wanting to use up all of your energy to swim in the wrong direction",
@@ -329,13 +332,22 @@ const youLostYourTrack2 = new flowChartEvent(
 export const rootFlowChartEvent = new flowChartEvent(
   "Are you feeling Sad, Anxious and Overwhelmed?",
   [
-    {label: "You're in pain and want comfort", destination: youWantHelp2 },
-    {label: "Your train lost its track", destination: youLostYourTrack2},
-    {label: "You feel guilty about hurting someone", destination: YouFeelGuilty2 },
-    {label: "You want something you can't have", destination: youWantSomethingYouCantHave2 },
-    {label: "You are remembering past events", destination: youreRememberingThePast },
-    {label: "You feel hurt by someone", destination: youFeelHurt2 },
-    {label: "You're afraid there's no way out", destination: theresNoWayOut2 },
-    {label: "You just feel wrong all over", destination: youJustFeelWrong2 },
+    { label: "You're in pain and want comfort", destination: youWantHelp2 },
+    { label: "Your train lost its track", destination: youLostYourTrack2 },
+    {
+      label: "You feel guilty about hurting someone",
+      destination: YouFeelGuilty2,
+    },
+    {
+      label: "You want something you can't have",
+      destination: youWantSomethingYouCantHave2,
+    },
+    {
+      label: "You are remembering past events",
+      destination: youreRememberingThePast,
+    },
+    { label: "You feel hurt by someone", destination: youFeelHurt2 },
+    { label: "You're afraid there's no way out", destination: theresNoWayOut2 },
+    { label: "You just feel wrong all over", destination: youJustFeelWrong2 },
   ]
 )

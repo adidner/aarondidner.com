@@ -1,8 +1,9 @@
 import React from "react"
+import ReactMarkdown from "react-markdown"
 
 export interface destinationObject {
   label: string
-  destination: flowChartEvent
+  destination: flowCharReactMarkdowntEvent
 }
 
 export class flowChartEvent {
@@ -59,7 +60,9 @@ export function FlowChartPage(props: FlowChartPageInterface) {
           home
         </div>
       </div>
-      <div className={"flowchart-center"}>{props.prompt}</div>
+      <div className={"flowchart-prompt-container"}>
+        <ReactMarkdown>{props.prompt}</ReactMarkdown>
+      </div>
       {props.destinationArray.map(destinationObject => {
         return (
           <div
