@@ -836,16 +836,23 @@ export const learningReadBookData: ReadInterface[] = [
             "",
         ],
     },
-    // {
-    //     title: "",
-    //     imagePath: "",
-    //     author: "",
-    //     rating: 8,
-    //     review: "",
-    //     takeAways: [
-
-    //     ],
-    // },
+    {
+        title: "The $100 Startup",
+        imagePath: "",
+        author: "Chris Guillebeau",
+        rating: -1,
+        review: "",
+        takeAways: [
+          "Concept: Provide Value, Gain freedom, Does not require lots of money, Learn as you go, Work with things you care about / are skilled with, (probably won't make a crazy amount of money though, but a good one)",
+          "Thrive by giving things away (gain loyal customers and good will) - unconventional ways of marketings and public interaction",
+          "Mico Businesses -> run by 1 person",
+          "Idea to startup is fast and cheap nowadays (scale, reach and connection)",
+          "",
+          "",
+          "",
+          "",
+        ],
+    },
     // {
     //     title: "",
     //     imagePath: "",
