@@ -1663,6 +1663,25 @@ export const learningReadBookData: ReadInterface[] = [
             
         ],
     },
+    {
+        title: "Man's Search For Meaning",
+        imagePath: "",
+        author: "Victor E. Frankl",
+        rating: 9,
+        review: "A very important book that describes the horrors of the holocaust and the psycology in overcoming it. ",
+        takeAways: [
+            "Only thing you can always controll is how you respond everything else is take away able",
+            "Sometimes man either wishes to do what others do, or wants to be told what to do ",
+            "Because of a so called existential vaccum or inner emptiness",
+            "Boredom is the manifesting of ^",
+            "Logotherapy vs reguarly fherapy, intro spective over retrospective",
+            "Interesting idea, man is afraid of sweating and this anxiety causes him to sweat. So his homework was go try and sweat as much as possible when had this fear. And his paradoxical wish would elleviate his anxiety ",
+            "Meaning via a realtionship with a person",
+            "Meaning via experiencing things",
+            "Meaning via creating things",
+            "Meaning via overcoming and re framing suffering into growth",
+        ],
+    },
     // {
     //     title: "",
     //     imagePath: "",
