@@ -1707,6 +1707,19 @@ export const learningReadBookData: ReadInterface[] = [
             "For flirting understand you by default have all the power, so try and give her more so you're equals, ask questions, be respectful, be patient, express invitations and try to be aware of your own entitlement, ask permission, be okay with the idea that you might be rejected (rejection for males is an ego bruise, rejection for females means potential physical harm)",
         ],
     },
+    {
+        title: "The Fire Next Time",
+        imagePath: "",
+        author: "James Baldwin",
+        rating: 8,
+        review: "A nice and well written take on a black mans suffering and perspective on Racism and prospects. I think he brings up a lot of great points about how a lot of movements a somewhat radical and single minded and that isn't how protests should go. Also just general some great metaphores on the black mans experience in American",
+        takeAways: [
+            "Hopelessness of growing up black and seeing only pimp, poor handy man, or drug addict in your future. ",
+            "Fleeing to the church, realizing that what the church preaches only applies to white people and that it sounds like nonsense unless you already believe it. And that God is white in Christianity ",
+            "Black people being treated worse than literal Nazis who were captured",
+            "Elijah Muhammad and single minded / universal rage towards white people, without exception or nuance, being something he disagrees with",
+        ],
+    },
     // {
     //     title: "",
     //     imagePath: "",
